@@ -6,16 +6,163 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!--Import materialize.css-->
     <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
-
+    <link type="text/css" rel="stylesheet" href="main.css" />
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>iPrivilege</title>
 </head>
 
 <body>
-<h1>test</h1>
+    <div class="main-image">
+        <div class="row">
+            <div class="col s12 l5">
+                <h4 id="slogan">Your pick of preferrential banking products and services that is among the best in the market</h4>
+            </div>
+            <div class="col s12 l7">
+                <div id="main-image"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- </div> -->
+
+    <div class="navbar">
+        <nav class="black">
+            <div class="container">
+                <div class="nav-wrapper">
+                    <a href="#!" class="brand-logo">iPrivilege</a>
+                    <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                    <ul class="right hide-on-med-and-down red">
+                        <li>
+                            <a href="#save">Save</a>
+                        </li>
+                        <li>
+                            <a href="#protect">Protect</a>
+                        </li>
+                        <li>
+                            <a href="#Invest">Invest</a>
+                        </li>
+                        <li>
+                            <a href="#finance">Finance</a>
+                        </li>
+                        <li>
+                            <a href="#contact">Promotion</a>
+                        </li>
+                        <li>
+                            <a id="login" href="https://internet-banking.dbs.com.sg/"><i class="material-icons right">lock</i>iBanking
+                                Login
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <ul class="sidenav" id="mobile-demo">
+        <li>
+            <a href="#save">Save</a>
+        </li>
+        <li>
+            <a href="#protect">Protect</a>
+        </li>
+        <li>
+            <a href="#invest">Invest</a>
+        </li>
+        <li>
+            <a href="#finance">Finance</a>
+        </li>
+        <li>
+            <a href="#promotion">Promotion</a>
+        </li>
+        <li>
+            <a href="https://internet-banking.dbs.com.sg/"><i class="material-icons right">lock</i>iBanking Login</a>
+        </li>
+    </ul>
+    <!-- <div class="container align-center"> -->
+    <div class="align-center">
+        <h5>DBS iPrivilege, an exclusive preferential banking privilege for DBS employees</h5>
+    </div>
+
+    <!-- Section: Icon Boxes -->
+    <section class="section section-icons grey lighten-4 center  z-depth-2">
+        <div class="container">
+            <div class="row">
+                <div class="col s12 m3">
+                    <div class="card-panel">
+                        <i class="material-icons large black-text">attach_money</i>
+                        <h5>Save</h5>
+                    </div>
+                </div>
+                <div class="col s12 m3">
+                    <div class="card-panel">
+                        <i class="material-icons large black-text">security</i>
+                        <h5>Protect</h5>
+                    </div>
+                </div>
+                <div class="col s12 m3">
+                    <div class="card-panel">
+                        <i class="material-icons large black-text">bar_chart</i>
+                        <h5>Invest</h5>
+                    </div>
+                </div>
+                <div class="col s12 m3">
+                    <div class="card-panel">
+                        <i class="material-icons large black-text">business_center</i>
+                        <h5>Finance</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section: Popular -->
+    <section id="popular" class="section section-popular scrollspy">
+        <div class="container">
+            <div class="row">
+                <h5>Highlights</h5>
+            </div>
+
+            <div class="row">
+                <div class="col s12 center">
+                    <a href="#" class="btn btn-large grey darken-3">
+                        <i class="material-icons left">send</i> Contact for more details
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tab links -->
+<div class="tab">
+        <button class="tablinks" onclick="openCity(event, 'London')">London</button>
+        <button class="tablinks" onclick="openCity(event, 'Paris')">Paris</button>
+        <button class="tablinks" onclick="openCity(event, 'Tokyo')">Tokyo</button>
+      </div>
+      
+      <!-- Tab content -->
+      <div id="London" class="tabcontent">
+        <h3>London</h3>
+        <p>London is the capital city of England. Really.</p>
+      </div>
+      
+      <div id="Paris" class="tabcontent">
+        <h3>Paris</h3>
+        <p>Paris is the capital of France.</p> 
+      </div>
+      
+      <div id="Tokyo" class="tabcontent">
+        <h3>Tokyo</h3>
+        <p>Tokyo is the capital of Japan.</p>
+      </div>
+
+
+    <!-- Footer -->
+    <footer class="section red white-text center">
+        <p class="flow-text">Group HR &copy; 2018</p>
+    </footer>
+    <!-- </div> -->
     <!--JavaScript at end of body for optimized loading-->
     <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script type="text/javascript" src="main.js"></script>
 </body>
 
 </html>
