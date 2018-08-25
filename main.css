@@ -130,6 +130,7 @@ h4 {
 }
 
 @media only screen and (max-width: 600px) {
+
     .item-container {
         margin: 10px;
     }
@@ -145,10 +146,12 @@ h4 {
     h5 {
         font-size: 1.1em;
         padding-top: 0;
+        padding: 0 10px;
     }
 
       #staff-message {
-        font-size: 1.15em;
+        font-size: 1.3em;
+        padding: 0 5px;
     }
     
 }
