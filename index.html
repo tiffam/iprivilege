@@ -12,48 +12,37 @@
 </head>
 
 <body>
-    <div class="main-image">
-        <div class="row">
-            <div class="col s12 l5">
-                <h4 id="slogan">Your pick of preferrential banking products and services that are among the best in the market</h4>
-            </div>
-            <div class="col s12 l7">
-                <div id="main-image"></div>
-            </div>
-        </div>
-    </div>
+
 
     <!-- </div> -->
 
-    <div class="navbar">
+    <div class="navbar-fixed">
         <nav class="black">
-            <div class="container">
-                <div class="nav-wrapper">
-                    <a href="#!" class="brand-logo">iPrivilege</a>
-                    <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-                    <ul class="right hide-on-med-and-down red">
-                        <li>
-                            <a href="#save">Save</a>
-                        </li>
-                        <li>
-                            <a href="#protect">Protect</a>
-                        </li>
-                        <li>
-                            <a href="#Invest">Invest</a>
-                        </li>
-                        <li>
-                            <a href="#finance">Finance</a>
-                        </li>
-                        <li>
-                            <a href="#contact">Promotion</a>
-                        </li>
-                        <li>
-                            <a id="login" href="https://internet-banking.dbs.com.sg/"><i class="material-icons right">lock</i>iBanking
-                                Login
-                            </a>
-                        </li>
-                    </ul>
-                </div>
+            <div class="nav-wrapper">
+                <a href="#!" class="brand-logo">iPrivilege</a>
+                <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                <ul class="right hide-on-med-and-down red">
+                    <li>
+                        <a href="#save">Save</a>
+                    </li>
+                    <li>
+                        <a href="#protect">Protect</a>
+                    </li>
+                    <li>
+                        <a href="#Invest">Invest</a>
+                    </li>
+                    <li>
+                        <a href="#finance">Finance</a>
+                    </li>
+                    <li>
+                        <a href="#contact">Promotion</a>
+                    </li>
+                    <li>
+                        <a id="login" href="https://internet-banking.dbs.com.sg/"><i class="material-icons right">lock</i>iBanking
+                            Login
+                        </a>
+                    </li>
+                </ul>
             </div>
         </nav>
     </div>
@@ -77,53 +66,90 @@
             <a href="https://internet-banking.dbs.com.sg/"><i class="material-icons right">lock</i>iBanking Login</a>
         </li>
     </ul>
+
+    <div class="main-banner">
+        <div class="row">
+            <img class="responsive-img right banner-image" src="chopsticks5.png">
+            <h4 id="slogan">Your pick of preferential banking products and services that are among the best in the market</h4>
+
+        </div>
+    </div>
     <!-- <div class="container align-center"> -->
     <div class="align-center">
-        <h5>DBS iPrivilege, an exclusive preferential banking privilege for DBS employees</h5>
+        <h5>iPrivilege, an exclusive preferential banking privilege for DBS employees</h5>
+        <p class="center-align" id="staff-message">From deposits to loans, you can pick a mix of products and services that
+            you need.
+        </p>
     </div>
 
-    <!-- Section: Icon Boxes -->
-    <section class="section section-icons grey lighten-4 center  z-depth-2">
-        <div class="container">
-            <div class="row">
-                <div class="col s12 m3">
-                    <div class="card-panel">
-                        <i class="material-icons large black-text">attach_money</i>
-                        <h5>Save</h5>
-                    </div>
-                </div>
-                <div class="col s12 m3">
-                    <div class="card-panel">
-                        <i class="material-icons large black-text">security</i>
-                        <h5>Protect</h5>
-                    </div>
-                </div>
-                <div class="col s12 m3">
-                    <div class="card-panel">
-                        <i class="material-icons large black-text">bar_chart</i>
-                        <h5>Invest</h5>
-                    </div>
-                </div>
-                <div class="col s12 m3">
-                    <div class="card-panel">
-                        <i class="material-icons large black-text">business_center</i>
-                        <h5>Finance</h5>
-                    </div>
-                </div>
+
+    <!-- Tab links -->
+    <div class="tab z-depth-2">
+        <button class="tablinks active" onclick="openTab(event, 'save_tab')">Save</button>
+        <button class="tablinks" onclick="openTab(event, 'protect_tab')">Protect</button>
+        <button class="tablinks" onclick="openTab(event, 'invest_tab')">Invest</button>
+        <button class="tablinks" onclick="openTab(event, 'finance_tab')">Finance</button>
+    </div>
+
+    <!-- Tab content -->
+    <div id="save_tab" class="tabcontent">
+        <h4>Save</h4>
+        <hr />
+        <div class="row">
+            <div class="item-container one col m6 s12">
+                <p class="item item-title">Savings and Current Account</p>
+                <ul>
+                    <li class="item-description">1% above board rate on SGD deposits for staff account</li>
+                    <li class="item-description">No monthly service charge or fall-below fee</li>
+                </ul>
+            </div>
+
+            <div class="item-container two col m6 s12">
+                <p class="item item-title">SGD Fixed Account</p>
+                <ul>
+                    <li class="item-description">0.5% above the prevailing tier rates for deposit amounts between SGD1,000
+                        to SGD4,999
+                    </li>
+                </ul>
             </div>
         </div>
-    </section>
+
+        <div class="row">
+            <div class="item-container three col m6 s12">
+                <p class="item item-title">Foreign Currency Fixed Account</p>
+                <ul>
+                    <li class="item-description">Highest tier rate for placement period
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div id="protect_tab" class="tabcontent">
+        <h3>Protect</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam maiores voluptatibus vero, repudiandae hic sit ratione quo optio amet exercitationem commodi eos, deserunt corporis quod itaque, consequuntur sed suscipit? Laborum?</p>
+    </div>
+
+    <div id="invest_tab" class="tabcontent">
+        <h3>Invest</h3>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo, eveniet architecto rerum accusantium non rem quos dignissimos. Officiis veritatis, esse facere soluta ipsum labore ipsam modi corporis. Laudantium, reiciendis incidunt.</p>
+    </div>
+    <div id="finance_tab" class="tabcontent">
+        <h3>Finance</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam similique explicabo recusandae asperiores harum, tempore eaque quibusdam saepe! Esse impedit fuga quos, corrupti quaerat saepe exercitationem laborum rerum ut ipsum..</p>
+    </div>
+
 
     <!-- Section: Popular -->
     <section id="popular" class="section section-popular scrollspy">
         <div class="container">
             <div class="row">
-                <h5>Highlights</h5>
+                <!-- <h5>Highlights</h5> -->
             </div>
 
             <div class="row">
                 <div class="col s12 center">
-                    <a href="#" class="btn btn-large grey darken-3">
+                    <a href="" class="btn btn-large grey darken-3">
                         <i class="material-icons left">send</i> Contact for more details
                     </a>
                 </div>
@@ -131,33 +157,12 @@
         </div>
     </section>
 
-    <!-- Tab links -->
-<!-- <div class="tab">
-        <button class="tablinks" onclick="openCity(event, 'London')">London</button>
-        <button class="tablinks" onclick="openCity(event, 'Paris')">Paris</button>
-        <button class="tablinks" onclick="openCity(event, 'Tokyo')">Tokyo</button>
-      </div>
-      
-      <!-- Tab content -->
-      <div id="London" class="tabcontent">
-        <h3>London</h3>
-        <p>London is the capital city of England. Really.</p>
-      </div>
-      
-      <div id="Paris" class="tabcontent">
-        <h3>Paris</h3>
-        <p>Paris is the capital of France.</p> 
-      </div>
-      
-      <div id="Tokyo" class="tabcontent">
-        <h3>Tokyo</h3>
-        <p>Tokyo is the capital of Japan.</p>
-      </div> -->
+
 
 
     <!-- Footer -->
-    <footer class="section red white-text center">
-        <p class="flow-text">Group HR &copy; 2018</p>
+    <footer class="center z-depth-4">
+        <p class="section red white-text flow-text">Group HR &copy; 2018</p>
     </footer>
     <!-- </div> -->
     <!--JavaScript at end of body for optimized loading-->

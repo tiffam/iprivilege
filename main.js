@@ -23,18 +23,11 @@ M.Materialbox.init(mb, {});
 const ac = document.querySelector('.autocomplete');
 M.Autocomplete.init(ac, {
     data: {
-      "Aruba": null,
-      "Cancun Mexico": null,
-      "Hawaii": null,
-      "Florida": null,
-      "California": null,
-      "Jamaica": null,
-      "Europe": null,
-      "The Bahamas": null,
+
     }
   });
 
-  function openCity(evt, cityName) {
+  function openTab(evt, cityName) {
     // Declare all variables
     var i, tabcontent, tablinks;
 
