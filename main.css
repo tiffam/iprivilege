@@ -128,6 +128,14 @@ h4 {
     
 }
 
+a {
+    color: black;
+}
+
+a:hover {
+    color: red;
+}
+
 @media only screen and (max-width: 600px) {
 
     .item-container {
