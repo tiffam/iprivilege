@@ -50,14 +50,14 @@
 .tab {
     overflow: hidden;
     border: 1px solid #ccc;
-    background-color: #f1f1f1;
+    background-color: white;
 }
 
 /* Style the buttons that are used to open the tab content */
 .tab button {
     background-color: inherit;
-    margin-right: 30px;
-    margin-left: 30px;
+    margin-right: 10px;
+    margin-left: 10px;
     border: none;
     outline: none;
     cursor: pointer;
@@ -65,7 +65,6 @@
     transition: 0.3s;
     font-size: 1.2em;
     font-weight: 500;
-    padding: 30px;
 }
 
 /* Change background color of buttons on hover */
@@ -158,4 +157,9 @@ h4 {
 
 footer {
     height: 30px;
+}
+
+
+.img-tab img{
+    width: 30vh;
 }
