@@ -11,8 +11,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 </head>
 
-<body>
-
+<body onscroll="closeNav('all')">
 
     <!-- </div> -->
 
@@ -23,13 +22,13 @@
                 <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
                 <ul class="right hide-on-med-and-down red">
                     <li>
-                        <a href="#handbook">Terms and Conditions</a>
+                        <a href="#handbook" onmouseover="openNavTerm()">Terms and Conditions</a>
                     </li>
                     <li>
-                        <a href="#promotions">Promotions</a>
+                        <a href="#" onmouseover="openNavPromo()">Promotions</a>
                     </li>
                     <li>
-                        <a href="#contact">Contact Us</a>
+                        <a href="#" onmouseover="openNav()">Contact Us</a>
                     </li>
                     <li>
                         <a id="login" href="https://internet-banking.dbs.com.sg/" target="_blank"><i class="material-icons right">lock</i>iBanking
@@ -51,14 +50,64 @@
             <a href="#contact">Contact Us</a>
         </li>
         <li>
-            <a href="https://internet-banking.dbs.com.sg/" target="_blank"><i class="material-icons right">lock</i>iBanking Login</a>
+            <a href="https://internet-banking.dbs.com.sg/" target="_blank"><i class="material-icons right">lock</i>iBanking
+                Login
+            </a>
         </li>
     </ul>
+
+    <div class="hidden z-depth-1" id="terms-layer" onmouseleave="closeNav('terms')">
+        <div class="row">
+            <div class="col s1 border-right">
+                <h4>Terms & Conditions</h4>
+            </div>
+            <div class="col s3">
+                <a href="http://mydbs.net/uploadedFiles/Departments/Human_Resource/Singapore/Staff_Corner/Benefits_and_Pay/Staff%20Banking%20Privileges.pdf" target="_blank"> 
+                    <img class="nav-terms-image hoverable" src="handbook.jpg">
+                    <p>Staff Banking Privilege Handbook</p>
+            </a>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="hidden z-depth-1" id="promotions-layer" onmouseleave="closeNav('promo')">
+        <div class="row">
+            <div class="col s1 border-right">
+                <h4>Promotions</h4>
+            </div>
+            <div class="col s3">
+                <a href="https://www.dbs.com.sg/personal/promotion/cards-signup?pid=sg-dbs-pweb-home-featured-cardtile-cards-cards-signup" target="_blank"><img class="hoverable nav-promo-image" src="mock-promo.png"></a>
+            </div>
+            <div class="col s3">
+                <a href="https://www.dbs.com.sg/personal/deposits/bank-with-ease/dbs50?pid=sg-dbs-pweb-bankhome-featured-cardtile-deposits-dbs50" target="_blank"><img class="hoverable nav-promo-image" src="mock-promo2.png"></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="hidden z-depth-1" id="contact-layer" onmouseleave="closeNav('contact')">
+        <div class="row">
+            <div class="col s1 border-right">
+                <h4>Contact Us</h4>
+            </div>
+            <div class="col s4">
+                <p><span class="bold">Our hotline:</span> 1800-7832700</p>
+                <p><span class="bold">Our email address:</span> <a href="mailto:staffbanking@dbs.com"> staffbanking@dbs.com</a></p>
+            </div>
+            <div class="col s4">
+                <p><span class="bold">Our operating hours:</span> <br />Mon - Fri: 9:30 AM - 5:00 PM<br /> Sat, Sun and Public
+                    Holidays: Closed</p>
+            </div>
+        </div>
+    </div>
+
 
     <div class="main-banner">
         <div class="row">
             <img class="responsive-img right banner-image" src="chopsticks5.png">
-            <h4 id="slogan">Your pick of preferential banking products and services that are among the best in the market</h4>
+            <h4 id="slogan">Your pick of preferential banking products and services <br />that are among the best in the
+                market
+            </h4>
 
         </div>
     </div>
@@ -80,11 +129,11 @@
     </div>
 
     <div class="tab z-depth-2 hide-on-large-only">
-            <button class="tablinks img-tab active" onclick="openTab(event, 'save_tab')">Saving</button>
-            <button class="tablinks img-tab" onclick="openTab(event, 'protect_tab')">Protecting</button>
-            <button class="tablinks img-tab" onclick="openTab(event, 'invest_tab')">Investing</button>
-            <button class="tablinks img-tab" onclick="openTab(event, 'finance_tab')">Financing</button>
-        </div>
+        <button class="tablinks img-tab active" onclick="openTab(event, 'save_tab')">Saving</button>
+        <button class="tablinks img-tab" onclick="openTab(event, 'protect_tab')">Protecting</button>
+        <button class="tablinks img-tab" onclick="openTab(event, 'invest_tab')">Investing</button>
+        <button class="tablinks img-tab" onclick="openTab(event, 'finance_tab')">Financing</button>
+    </div>
 
 
     <!-- Tab content -->
@@ -93,7 +142,8 @@
         <hr />
         <div class="row">
             <div class="item-container one col m6 s12">
-                <p class="item item-title"><a href="https://www.dbs.com.sg/personal/deposits/accounts/default.page" target="_blank">Savings and Current Account</a></p>
+                <p class="item item-title"><a href="https://www.dbs.com.sg/personal/deposits/accounts/default.page" target="_blank">Savings
+                        and Current Account</a></p>
                 <ul>
                     <li class="item-description">1% above board rate on SGD deposits for staff account</li>
                     <li class="item-description">No monthly service charge or fall-below fee</li>
@@ -101,7 +151,8 @@
             </div>
 
             <div class="item-container two col m6 s12">
-                <p class="item item-title"><a href="https://www.dbs.com.sg/personal/deposits/fixed-deposits/s-dollar-fixed-deposit" target="_blank">SGD Fixed Account</a></p>
+                <p class="item item-title"><a href="https://www.dbs.com.sg/personal/deposits/fixed-deposits/s-dollar-fixed-deposit"
+                        target="_blank">SGD Fixed Account</a></p>
                 <ul>
                     <li class="item-description">0.5% above the prevailing tier rates for deposit amounts between SGD1,000
                         to SGD4,999
@@ -112,7 +163,8 @@
 
         <div class="row">
             <div class="item-container three col m6 s12">
-                <p class="item item-title"><a href="https://www.dbs.com.sg/personal/deposits/fixed-deposits/foreign-currency-fixed-deposit" target="_blank">Foreign Currency Fixed Account</a></p>
+                <p class="item item-title"><a href="https://www.dbs.com.sg/personal/deposits/fixed-deposits/foreign-currency-fixed-deposit"
+                        target="_blank">Foreign Currency Fixed Account</a></p>
                 <ul>
                     <li class="item-description">Highest tier rate for placement period
                     </li>
@@ -123,22 +175,40 @@
 
     <div id="protect_tab" class="tabcontent">
         <h3>Protecting</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam maiores voluptatibus vero, repudiandae hic sit ratione quo optio amet exercitationem commodi eos, deserunt corporis quod itaque, consequuntur sed suscipit? Laborum?</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam maiores voluptatibus vero, repudiandae hic sit
+            ratione quo optio amet exercitationem commodi eos, deserunt corporis quod itaque, consequuntur sed suscipit?
+            Laborum?
+        </p>
     </div>
 
     <div id="invest_tab" class="tabcontent">
         <h3>Investing</h3>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo, eveniet architecto rerum accusantium non rem quos dignissimos. Officiis veritatis, esse facere soluta ipsum labore ipsam modi corporis. Laudantium, reiciendis incidunt.</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo, eveniet architecto rerum accusantium non
+            rem quos dignissimos. Officiis veritatis, esse facere soluta ipsum labore ipsam modi corporis. Laudantium, reiciendis
+            incidunt.
+        </p>
     </div>
     <div id="finance_tab" class="tabcontent">
         <h3>Financing</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam similique explicabo recusandae asperiores harum, tempore eaque quibusdam saepe! Esse impedit fuga quos, corrupti quaerat saepe exercitationem laborum rerum ut ipsum..</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam similique explicabo recusandae asperiores harum,
+            tempore eaque quibusdam saepe! Esse impedit fuga quos, corrupti quaerat saepe exercitationem laborum rerum ut
+            ipsum..
+        </p>
     </div>
 
+
+    <ul id="dropdown1" class="dropdown-content">
+        <li><a href="#!">one</a></li>
+        <li><a href="#!">two</a></li>
+        <li class="divider"></li>
+        <li><a href="#!">three</a></li>
+    </ul>
 
     <!-- Footer -->
     <footer class="center z-depth-4">
         <p class="section red white-text flow-text">Group HR &copy; 2018</p>
+
+
     </footer>
     <!-- </div> -->
     <!--JavaScript at end of body for optimized loading-->

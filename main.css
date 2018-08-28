@@ -171,3 +171,40 @@ footer {
 .img-tab img{
     width: 30vh;
 }
+
+.hidden {
+    display: none;
+}
+
+#contact-layer, #promotions-layer, #terms-layer {
+    padding: 20px;
+    position: fixed;
+    width: 100%;
+    background-color: white;
+    font-size: 0.8em;
+    
+}
+
+.bold {
+    font-weight: 500;
+    color: red;
+}
+
+.border-right {
+    border-right: 3px solid red;
+    margin-right: 50px;
+}
+
+.nav-promo-image {
+    width: 80%;
+}
+
+.nav-terms-image {
+    width: 70%;
+    /* margin: 20px 20px 0 20px; */
+}
+
+figcaption {
+    font-size: 12px;
+    /* margin: 0 20px; */
+}
