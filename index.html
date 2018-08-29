@@ -62,14 +62,14 @@
                 <h4>Terms & Conditions</h4>
             </div>
             <div class="col s3">
-                <a href="http://mydbs.net/uploadedFiles/Departments/Human_Resource/Singapore/Staff_Corner/Benefits_and_Pay/Staff%20Banking%20Privileges.pdf" target="_blank"> 
-                    <img class="nav-terms-image hoverable" src="handbook.jpg">
+                <a href="http://mydbs.net/uploadedFiles/Departments/Human_Resource/Singapore/Staff_Corner/Benefits_and_Pay/Staff%20Banking%20Privileges.pdf"
+                    target="_blank">
+                    <img class="nav-terms-image hoverable" src="./images/handbook.jpg">
                     <p>Staff Banking Privilege Handbook</p>
-            </a>
+                </a>
             </div>
         </div>
     </div>
-
 
     <div class="hidden z-depth-1" id="promotions-layer" onmouseleave="closeNav('promo')">
         <div class="row">
@@ -77,10 +77,12 @@
                 <h4>Promotions</h4>
             </div>
             <div class="col s3">
-                <a href="https://www.dbs.com.sg/personal/promotion/cards-signup?pid=sg-dbs-pweb-home-featured-cardtile-cards-cards-signup" target="_blank"><img class="hoverable nav-promo-image" src="mock-promo.png"></a>
+                <a href="https://www.dbs.com.sg/personal/promotion/cards-signup?pid=sg-dbs-pweb-home-featured-cardtile-cards-cards-signup"
+                    target="_blank"><img class="hoverable nav-promo-image" src="./images/mock-promo.png"></a>
             </div>
             <div class="col s3">
-                <a href="https://www.dbs.com.sg/personal/deposits/bank-with-ease/dbs50?pid=sg-dbs-pweb-bankhome-featured-cardtile-deposits-dbs50" target="_blank"><img class="hoverable nav-promo-image" src="mock-promo2.png"></a>
+                <a href="https://www.dbs.com.sg/personal/deposits/bank-with-ease/dbs50?pid=sg-dbs-pweb-bankhome-featured-cardtile-deposits-dbs50"
+                    target="_blank"><img class="hoverable nav-promo-image" src="./images/mock-promo2.png"></a>
             </div>
         </div>
     </div>
@@ -104,11 +106,16 @@
 
     <div class="main-banner">
         <div class="row">
-            <img class="responsive-img right banner-image" src="chopsticks5.png">
-            <h4 id="slogan">Your pick of preferential banking products and services <br />that are among the best in the
-                market
-            </h4>
+            <div class="col m6 s12">
+                <h4 id="slogan">Your pick of preferential banking products and services that are among the best in
+                    the market
+                </h4>
+            </div>
 
+            <div class="col m6 s12">
+                <!-- <div class="banner-image"></div> -->
+                <img class="responsive-img right banner-image valign-wrapper" id="banner-image" src="./images/chopsticks5.png">
+            </div>
         </div>
     </div>
     <!-- <div class="container align-center"> -->
@@ -121,20 +128,19 @@
 
 
     <!-- Tab links -->
-    <div class="tab z-depth-2 hide-on-med-and-down">
-        <button class="tablinks img-tab active" onclick="openTab(event, 'save_tab')"><img src="save_pic.png"></button>
-        <button class="tablinks img-tab" onclick="openTab(event, 'protect_tab')"><img src="protect_pic.png"></button>
-        <button class="tablinks img-tab" onclick="openTab(event, 'invest_tab')"><img src="invest_pic.png"></button>
-        <button class="tablinks img-tab" onclick="openTab(event, 'finance_tab')"><img src="finance_pic.png"></button>
+    <div id="tab-large" class="tab tab2 z-depth-2 hide-on-med-and-down">
+        <button class="tablinks img-tab active" onclick="openTab(event, 'save_tab')"><img src="./images/save_pic2.png"></button>
+        <button class="tablinks img-tab" onclick="openTab(event, 'protect_tab')"><img src="./images/protect_pic2.png"></button>
+        <button class="tablinks img-tab" onclick="openTab(event, 'invest_tab')"><img src="./images/invest_pic2.png"></button>
+        <button class="tablinks img-tab" onclick="openTab(event, 'finance_tab')"><img src="./images/finance_pic2.png"></button>
     </div>
 
-    <div class="tab z-depth-2 hide-on-large-only">
+    <div id="tab-med" class="tab z-depth-2 hide-on-large-only">
         <button class="tablinks img-tab active" onclick="openTab(event, 'save_tab')">Saving</button>
         <button class="tablinks img-tab" onclick="openTab(event, 'protect_tab')">Protecting</button>
         <button class="tablinks img-tab" onclick="openTab(event, 'invest_tab')">Investing</button>
         <button class="tablinks img-tab" onclick="openTab(event, 'finance_tab')">Financing</button>
     </div>
-
 
     <!-- Tab content -->
     <div id="save_tab" class="tabcontent">
@@ -171,6 +177,28 @@
                 </ul>
             </div>
         </div>
+
+        <hr />
+
+        <div class="container row">
+            
+            <img class="story-image item-container col s12 responsive-image" src="./images/happygirl.jpg" alt="">
+            <div class="stories hide-on-small-only">
+                <h5 class="story-title">I get an additional S$100 by banking with DBS. <br />How do I do it?</h5>
+                <p class="story-paragraph">With a S$4,000 salary, a SGD500 of credit card spent, I enjoy a 2.2% p.a. interest on the S$70,000 in my multiplier account.
+                    With iPrivilege, I get another 1% p.a. above board rate on my savings.
+                </p>
+            </div>
+
+            <div class="show-on-small-only hide-on-med-and-up">
+                    <h5 class="story-title">I get an additional S$100 by banking with DBS. <br />How do I do it?</h5>
+                    <p class="story-paragraph">With a S$4,000 salary, a SGD500 of credit card spent, I enjoy a 2.2% p.a. interest on the S$70,000 in my multiplier account.
+                        With iPrivilege, I get another 1% p.a. above board rate on my savings.
+                    </p>
+                </div>
+        </div>
+
+
     </div>
 
     <div id="protect_tab" class="tabcontent">
@@ -207,7 +235,6 @@
     <!-- Footer -->
     <footer class="center z-depth-4">
         <p class="section red white-text flow-text">Group HR &copy; 2018</p>
-
 
     </footer>
     <!-- </div> -->

@@ -109,3 +109,5 @@ function closeNav(itemType) { //hides contact layer if open
 
 }
 
+//controlling the tab when user scroll up
+document.getElementById("tab-large")
