@@ -2,6 +2,19 @@
       margin: 0;
   }
 
+  /* spinner */
+
+  .spinner-container {
+      height: 600px;
+  }
+
+  .preloader-wrapper {
+    left: 50%;
+    margin-left: -2em;
+    top: 40%;
+  }
+
+
   .brand-logo {
       margin-left: 10px;
   }
@@ -12,24 +25,25 @@
   }
 
   li {
-      margin-left: 40px;
+      margin-left: 30px;
+  }
+
+  .tnc-list {
+      margin: 10px 0;
+  }
+
+  .nav-item {
+    padding: 0 10px;
+  }
+
+  .nav-item:hover {
+    background-color: darkred;
   }
 
   .main-banner {
     background-color:#211E27;
     align-content: center;
     text-align: center;
-
-    /* height: 350px; */
-    /* margin-top: -30px; */
-    /* flex: right; */
-  }
-
-  .banner-image {
-      background-image: url("chopsticks5.png");
-      background-repeat: no-repeat;
-      background-size: cover;
-      /* height: 350px; */
   }
 
   h5 {
@@ -45,23 +59,14 @@
   }
 
   #slogan {
-      /* padding-top: 100px; */
       font-size: 1.7em;
       color: white;
       text-align: center;
-      /* height: 350px; */
-      /* padding-bottom: 160px; */
   }
 
   .main {
       height: auto;
   }
-
-  #login {
-      margin-left: 50px;
-  }
-
-  /* test */
 
   /* Style the tab */
 .tab {
@@ -101,9 +106,7 @@
 .tabcontent {
     display: none;
     padding: 6px 12px;
-    /* border: 1px solid #cccccc; */
     border-top: none;
-    border-bottom: 1px solid #cccccc;
     margin: 0 50px;
 }
 
@@ -136,6 +139,10 @@
     display: inline-block;
 }
 
+.img-tab img{
+    width: 15vh;
+}
+
 #staff-message {
     font-size: 1.4em;
     margin-top: 
@@ -155,13 +162,23 @@ h4 {
 }
 
 .item-title {
-    font-weight: 800;
+    font-weight: 500;
     margin-left: 20px;
+}
+
+.link-style:hover, .nav-image-title:hover {
+    text-decoration: underline;
+    color: red!important;
+}
+
+.nav-image-title {
+    font-weight: 500;
 }
 
 .item-description {
     color: gray;
     list-style-type: disc!important;
+    font-size: 0.9em;
     
 }
 
@@ -169,14 +186,19 @@ a {
     color: black;
 }
 
-a:hover {
-    color: red;
+#login {
+    padding: 0;
 }
 
-
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 762px) {
     #slogan {
-        font-size: 1.5em;
+        font-size: 1.25em;
+    }
+}
+
+@media only screen and (max-width: 412px) {
+    #slogan {
+        font-size: 1em;
     }
 }
 
@@ -190,9 +212,9 @@ a:hover {
         margin-bottom: 10px;
     }
 
-    #slogan {
+    /* #slogan {
         font-size: 1em;
-    }
+    } */
 
     h5 {
         font-size: 1.1em;
@@ -200,27 +222,23 @@ a:hover {
         padding: 0 10px;
     }
 
-      #staff-message {
-        font-size: 1.3em;
+    #staff-message {
+        font-size: 1.1em;
         padding: 0 5px;
-
-        .stories {
-            position: relative;
-            width: 100%;
-            padding: 0px;
-            z-index: 1;
-        }
     }
+
+    .stories {
+        position: relative;
+        width: 100%;
+        padding: 0px;
+        z-index: 1;
+    }
+    
     
 }
 
 footer {
     height: 30px;
-}
-
-
-.img-tab img{
-    width: 15vh;
 }
 
 .hidden {
@@ -232,13 +250,12 @@ footer {
     position: fixed;
     width: 100%;
     background-color: white;
-    font-size: 0.8em;
-    
+    font-size: 0.8em; 
 }
 
 .bold {
     font-weight: 500;
-    color: red;
+    /* color: red; */
 }
 
 .border-right {
@@ -251,13 +268,8 @@ footer {
 }
 
 .nav-terms-image {
-    width: 70%;
+    height: 150px;
     /* margin: 20px 20px 0 20px; */
-}
-
-figcaption {
-    font-size: 12px;
-    /* margin: 0 20px; */
 }
 
 .stories {
@@ -280,4 +292,33 @@ figcaption {
 .show-on-small-only {
     text-align: center;
     font-size: 0.9em;
+}
+
+.copyright {
+    font-size: 0.8em;
+    font-weight: 400;
+}
+
+/* Sidenav styling */
+
+#sidenav-contact, #sidenav-terms {
+    height: 1000px;
+}
+
+#tab-hr {
+    margin: 50px;
+}
+
+.application-text {
+    color: gray;
+    font-size: 0.9em;
+}
+
+.tab-section-title {
+    margin-top: -20px;
+    padding-bottom: 10px;
+    text-align: left;
+    font-size: 1em;
+    text-transform: uppercase;
+
 }

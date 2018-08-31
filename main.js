@@ -1,3 +1,8 @@
+///spinner
+
+
+
+
 // Side Menu
 const sideNav = document.querySelector('.sidenav');
 M.Sidenav.init(sideNav, {});
@@ -48,7 +53,30 @@ function openTab(evt, cityName) {
     evt.currentTarget.className += " active";
 }
 
+
+// added polyfill for includes as global variable 
+
+var includePolyfill = function() {
+    if (!String.prototype.includes) {
+        String.prototype.includes = function(search, start) {
+        'use strict';
+        if (typeof start !== 'number') {
+            start = 0;
+        }
+        
+        if (start + search.length > this.length) {
+            return false;
+        } else {
+            return this.indexOf(search, start) !== -1;
+        }
+        };
+    }
+    }
+
 function openNav() {
+
+   includePolyfill();
+
     if (document.getElementById("promotions-layer").className.includes("hidden") === false) {
         document.getElementById("promotions-layer").classList.add("hidden");
     }
@@ -60,6 +88,9 @@ function openNav() {
 }
 
 function openNavTerm() {
+
+    includePolyfill();
+
     if (document.getElementById("promotions-layer").className.includes("hidden") === false) {
         document.getElementById("promotions-layer").classList.add("hidden");
     }
@@ -73,7 +104,10 @@ function openNavTerm() {
 }
 
 function openNavPromo() {
-    if (document.getElementById("contact-layer").className.includes("hidden") === false) {
+
+    includePolyfill();
+
+     if (document.getElementById("contact-layer").className.includes("hidden") === false) {
         document.getElementById("contact-layer").classList.add("hidden")
     }
     if (document.getElementById("terms-layer").className.includes("hidden") === false) {
@@ -100,7 +134,7 @@ function closeNav(itemType) { //hides contact layer if open
         let itemType = document.getElementById("promotions-layer");
         itemType.classList.add("hidden");
     }
-    
+
     if (itemType === "all") { //hides any displayed nav layer if open
         document.getElementById("contact-layer").classList.add("hidden");
         let promo = document.getElementById("promotions-layer").classList.add("hidden");
@@ -111,3 +145,10 @@ function closeNav(itemType) { //hides contact layer if open
 
 //controlling the tab when user scroll up
 document.getElementById("tab-large")
+
+//initialization for collapsible component
+
+// document.addEventListener('DOMContentLoaded', function() {
+//     var elems = document.querySelectorAll('.collapsible');
+//     var instances = M.Collapsible.init(elems, options);
+//   });
