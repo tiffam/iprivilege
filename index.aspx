@@ -260,12 +260,12 @@
                         their staff passes for identification when opening accounts and on each occasion of
                         purchase/transaction, where applicable. Employees may open accounts either singly or jointly with
                         approved family members defined as spouse, children, and parents. </p>
-                <p class="application-text"><span class="bold">New Single Account:</span> You can apply online for a DBS/POSB account @ <a class="link-style" href="https://www.dbs.com.sg/personal/deposits/bank-with-ease/addon-casa?cid=sg-dbs-vanity-deposits-addon-casa">go.dbs.com/sg-onboard</a>.
+                <p class="application-text"><span class="bold">New Single Account:</span> You can apply online for a DBS/POSB account @ <a class="link-style" href="https://www.dbs.com.sg/personal/deposits/bank-with-ease/addon-casa?cid=sg-dbs-vanity-deposits-addon-casa" target="_blank">go.dbs.com/sg-onboard</a>.
                     If you do not have an existing deposit account with DBS, the online application will take approximately
                     5 working days. Alternatively, you can visit any POSB / DBS branch.</p>
                 <p class="application-text"><span class="bold">New Joint Account:</span> You may open joint accounts with approved family members at any POSB / DBS branch. Application is not available online.</p>
-                <p class="application-text"><span class="bold">Existing Account:</span> Employees are required to complete the Staff Application for
-                        Special Banking Privileges, and submit the application form to T&O SG Account Services: 2
+                <p class="application-text"><span class="bold">Existing Account:</span> Employees are required to complete the <a class="link-style" href="http://mydbs.net/uploadedFiles/Departments/Human_Resource/Singapore/Staff_Corner/Forms(1)/Benefits_and_Pay/Pay/staff%20app%20form.pdf" target="_blank">Staff Application for
+                    Special Banking Privileges</a>, and submit the application form to T&O SG Account Services: 2
                         Changi Business Park Crescent, #07-05, DBS Asia Hub Lobby B, S486029 (CP:AH0011).</p>
                
                 <p class="application-text"><span class="bold">All other accounts:</span> Please refer to the bank's website for details on application.</p>
