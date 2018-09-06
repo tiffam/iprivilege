@@ -200,6 +200,36 @@ a {
     #slogan {
         font-size: 1em;
     }
+
+    .tabcontent {
+        display: none;
+        padding: 0px;
+        border-top: none;
+        margin: 0 10px;
+    }
+    
+    .application-text {
+        font-size: 1em!important;
+        margin: 10px;
+    }
+
+    .item-description{
+        font-size: 1em!important;
+    }
+
+    .item-title {
+        font-size: 1em!important;
+        padding-top: 10px;    
+    }
+
+    .story-paragraph {
+        font-size: 1em!important;
+    }
+
+    .story-title {
+        font-size: 1em!important; 
+    }
+    
 }
 
 @media only screen and (max-width: 600px) {
@@ -315,7 +345,7 @@ footer {
 }
 
 .tab-section-title {
-    margin-top: -20px;
+    /* margin-top: -20px; */
     padding-bottom: 10px;
     text-align: left;
     font-size: 1em;
