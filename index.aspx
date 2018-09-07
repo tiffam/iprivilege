@@ -39,8 +39,6 @@
                     <a href="#!" class="brand-logo">iPrivilege</a>
                     <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
                     <ul class="right hide-on-med-and-down red">
-                        <li class="nav-item" onmouseover="openNavTerm()">Terms and Conditions
-                        </li>
                         <li class="nav-item" onmouseover="openNavPromo()">Promotions
                         </li>
                         <li class="nav-item" onmouseover="openNav()">Contact Us
@@ -58,9 +56,6 @@
         <!-- Navigation bar for mobile-->
         <ul class="sidenav" id="mobile-demo">
             <li>
-                <a href="#">Terms & Conditions</a>
-            </li>
-            <li>
                 <a href="#">Promotions</a>
             </li>
             <li>
@@ -75,39 +70,7 @@
 
         <!-- Navigation layers -->
 
-        <div class="hidden z-depth-1" id="terms-layer" onmouseleave="closeNav('terms')">
-            <div class="row">
 
-                <div class="col s1 border-right">
-                    <h4>Terms and Conditions</h4>
-                </div>
-                <div class="col s4">
-                    <ul>
-                        <li class="tnc-list">iPrivileges are specially customised for DBS permanent and direct contract employees.
-                            Any persons or parties should not in any way, directly or indirectly, be permitted to enjoy them.</li>
-                        <li class="tnc-list">Specifically for staff loans, only confirmed and permanent employees are eligible
-                            to apply.</li>
-                        <li class="tnc-list">Employees’ accounts are strictly meant for personal use only.</li>
-                        <li class="tnc-list"><a class="link-style" href="https://www.dbs.com/terms/default.page">DBS's Terms
-                                and Conditions > </a></li>
-                    </ul>
-                </div>
-
-                <div class="col s3">
-                    <a href="http://mydbs.net/uploadedFiles/Departments/Human_Resource/Singapore/Staff_Corner/Benefits_and_Pay/Staff%20Banking%20Privileges.pdf"
-                        target="_blank">
-                        <img class="nav-terms-image hoverable" src="./images/handbook.jpg">
-                        <p class="nav-image-title">Staff Banking Privilege Handbook ></p>
-                    </a>
-                </div>
-                <div class="col s3">
-                    <a href="http://mydbs.net/Staff_Corner/Reward/Benefits/Staff_Loans.aspx" target="_blank">
-                        <img class="nav-terms-image hoverable" src="./images/staffloan_screenshot.PNG">
-                        <p class="nav-image-title">Staff Loan Intranet Site ></p>
-                    </a>
-                </div>
-            </div>
-        </div>
 
         <div class="hidden z-depth-1" id="promotions-layer" onmouseleave="closeNav('promo')">
             <div class="row">
@@ -145,34 +108,28 @@
         <!-- Main banner with image and text -->
 
         <div class="main-banner">
-            <div class="row">
-                <div class="col m6 s12">
-                    <h4 id="slogan">Your pick of preferential banking products and services that are among the best in the
-                        market
-                    </h4>
-                </div>
-
-                <div class="col m6 s12">
-                    <!-- <div class="banner-image"></div> -->
-                    <img class="responsive-img right banner-image valign-wrapper" id="banner-image" src="./images/chopsticks5.png">
-                </div>
+            <!-- <div class="row"> -->
+            <div>
+                <!-- <div class="banner-image"></div> -->
+                <img class="responsive-img banner-image valign-wrapper" id="banner-image" src="./images/new_banner.jpg">
             </div>
+            <!-- </div> -->
         </div>
         <!-- <div class="container align-center"> -->
         <div class="align-center">
-            <h5>iPrivilege, an exclusive preferential banking privilege for DBS employees</h5>
-            <p class="center-align" id="staff-message">From deposits to loans, you can pick a mix of products and services
-                that you need.
-            </p>
+            <h5 class="tag-line">iPrivilege, an exclusive preferential <br /> banking privilege for DBS employees</h5>
+            <!-- <p class="center-align" id="staff-message">From deposits to loans, you can pick a mix of products and services
+                that you need. -->
+            <!-- </p> -->
         </div>
 
 
         <!-- Tabs -->
         <div id="tab-large" class="tab tab2 z-depth-2 hide-on-med-and-down">
-            <button class="tablinks img-tab active" onclick="openTab(event, 'save_tab')"><img src="./images/save_pic2.png"></button>
-            <button class="tablinks img-tab" onclick="openTab(event, 'protect_tab')"><img src="./images/protect_pic2.png"></button>
-            <button class="tablinks img-tab" onclick="openTab(event, 'invest_tab')"><img src="./images/invest_pic2.png"></button>
-            <button class="tablinks img-tab" onclick="openTab(event, 'finance_tab')"><img src="./images/finance_pic2.png"></button>
+            <a href="#tab-large"><button class="tablinks img-tab active" onclick="openTab(event, 'save_tab')"><img src="./images/save_pic2.png"></button></a>
+            <a href="#tab-large"><button class="tablinks img-tab" onclick="openTab(event, 'protect_tab')"><img src="./images/protect_pic2.png"></button></a>
+            <a href="#tab-large"><button class="tablinks img-tab" onclick="openTab(event, 'invest_tab')"><img src="./images/invest_pic2.png"></button></a>
+            <a href="#tab-large"><button class="tablinks img-tab" onclick="openTab(event, 'finance_tab')"><img src="./images/finance_pic2.png"></button></a>
         </div>
 
         <div id="tab-med" class="tab z-depth-2 hide-on-large-only">
@@ -183,12 +140,12 @@
         </div>
 
         <!-- Tab content -->
+
         <div id="save_tab" class="tabcontent">
-            <h4>Saving</h4>
-            <hr />
+            <h5 class="tab-section-title">Saving</h5>
 
             <div class="row">
-                <h5 class="tab-section-title">At a glance</h5>
+                <!-- <h5 class="tab-section-title">At a glance</h5> -->
                 <div class="item-container one col m6 s12">
                     <p class="item item-title"><a class="link-style" href="https://www.dbs.com.sg/personal/deposits/accounts/default.page"
                             target="_blank">Savings and Current Account ></a></p>
@@ -233,9 +190,9 @@
 
             </div>
 
-            <hr />
+            <!-- <hr /> -->
 
-            <div class="row">
+            <!-- <div class="row">
 
                 <h5 class="tab-section-title">Spotlight</h5>
                 <div class="container">
@@ -259,7 +216,7 @@
                 </div>
             </div>
 
-            <hr />
+            <hr /> -->
 
             <!-- <div class="row">
                 <h5 class="tab-section-title">Reference</h5>
@@ -267,37 +224,14 @@
                         target="_blank" class="link-style">Staff Banking Privileges Handbook</a> on Intranet.</p>
             </div> -->
 
-            <div class="row">
-                <h5 class="tab-section-title">Account Application</h5>
-                <p class="application-text">Employees who wish to take advantage of the banking privileges mentioned should
-                    produce their staff passes for identification when opening accounts and on each occasion of purchase/transaction,
-                    where applicable. Employees may open accounts either singly or jointly with approved family members defined
-                    as spouse, children, and parents. </p>
-                <p class="application-text"><span class="bold">New Single Account:</span> You can apply online for a DBS/POSB
-                    account @ <a class="link-style" href="https://www.dbs.com.sg/personal/deposits/bank-with-ease/addon-casa?cid=sg-dbs-vanity-deposits-addon-casa"
-                        target="_blank">go.dbs.com/sg-onboard</a>. If you do not have an existing deposit account with DBS, the
-                    online application will take approximately 5 working days. Alternatively, you can visit any POSB / DBS
-                    branch.</p>
-                <p class="application-text"><span class="bold">New Joint Account:</span> You may open joint accounts with
-                    approved family members at any POSB / DBS branch. Application is not available online.</p>
-                <p class="application-text"><span class="bold">Existing Account:</span> Employees are required to complete
-                    the <a class="link-style" href="http://mydbs.net/uploadedFiles/Departments/Human_Resource/Singapore/Staff_Corner/Forms(1)/Benefits_and_Pay/Pay/staff%20app%20form.pdf"
-                        target="_blank">Staff Application for Special Banking Privileges</a>, and submit the application form
-                    to T&O SG Account Services: 2 Changi Business Park Crescent, #07-05, DBS Asia Hub Lobby B, S486029 (CP:AH0011).</p>
 
-                <p class="application-text"><span class="bold">All other accounts:</span> Please refer to the bank's website
-                    for details on application.</p>
-            </div>
 
         </div>
 
         <div id="protect_tab" class="tabcontent">
-            <h4>Protecting</h4>
-
-            <hr />
+            <h5 class="tab-section-title">Protecting</h5>
 
             <div class="row">
-                <h5 class="tab-section-title">At a glance</h5>
                 <div class="item-container one col m6 s12">
                     <p class="item item-title"><a class="link-style" href="http://mydbs.net/Pages/ContentTemplate3.aspx?taxid=154935%20"
                             target="_blank">Life Insurance ></a></p>
@@ -329,10 +263,9 @@
         </div>
 
         <div id="invest_tab" class="tabcontent">
-            <h4>Investing</h4>
+            <h5 class="tab-section-title">Investing</h5>
 
             <div class="row">
-                <h5 class="tab-section-title">At a glance</h5>
                 <div class="item-container one col m6 s12">
                     <p class="item item-title"><a class="link-style" href="http://mydbs.net/uploadedFiles/Departments/Human_Resource/Singapore/Staff_Corner/Benefits_and_Pay/dbsvo_commission_schedule_18may12__final.pdf"
                             target="_blank">Online Share Trading ></a></p>
@@ -354,7 +287,8 @@
                         <li class="item-description"> Discounted sales charge of 1.5% for all unit trust, except for Nikko
                             AM Shenton Short Term Bond Fund (sales charge at 0.2%) and MyHome Funds
                         </li>
-                        <li class="item-description">0% sales charge for lump sum investments and RSP using cash (current promotion)
+                        <li class="item-description">0% sales charge for lump sum investments and RSP using cash (current
+                            promotion)
                         </li>
 
                     </ul>
@@ -362,38 +296,35 @@
             </div>
 
             <div class="row">
-                    <div class="item-container one col m6 s12">
-                        <p class="item item-title"><a class="link-style" href="http://mydbs.net/uploadedFiles/Departments/Human_Resource/Singapore/Staff_Corner/Benefits_and_Pay/dbsvo_commission_schedule_18may12__final.pdf"
-                                target="_blank"> Investment-Linked Products Benefits ></a></p>
-                        <ul>
-                            <li class="item-description">Discounted sales charge of 1.5% for all unit trust, except for Nikko AM
-                                    Shenton Short Term Bond Fund (sales charge at 0.2%) and MyHome Funds
-                            </li>
-                        </ul>
-                    </div>
-    
-                    <div class="item-container two col m6 s12">
-                        <p class="item item-title"><a class="link-style" href=""
-                                target="_blank">Initial Public Offerings ></a></p>
-                        <ul>
-                            <li class="item-description"> Waiver of commission on one Demand Draft purchased
-                            </li>
-                            <li class="item-description">Special rates
-                            </li>
-                        </ul>
-                    </div>
+                <div class="item-container one col m6 s12">
+                    <p class="item item-title"><a class="link-style" href="http://mydbs.net/uploadedFiles/Departments/Human_Resource/Singapore/Staff_Corner/Benefits_and_Pay/dbsvo_commission_schedule_18may12__final.pdf"
+                            target="_blank"> Investment-Linked Products Benefits ></a></p>
+                    <ul>
+                        <li class="item-description">Discounted sales charge of 1.5% for all unit trust, except for Nikko
+                            AM Shenton Short Term Bond Fund (sales charge at 0.2%) and MyHome Funds
+                        </li>
+                    </ul>
                 </div>
+
+                <div class="item-container two col m6 s12">
+                    <p class="item item-title"><a class="link-style" href="" target="_blank">Initial Public Offerings ></a></p>
+                    <ul>
+                        <li class="item-description"> Waiver of commission on one Demand Draft purchased
+                        </li>
+                        <li class="item-description">Special rates
+                        </li>
+                    </ul>
+                </div>
+            </div>
 
 
 
         </div>
 
         <div id="finance_tab" class="tabcontent">
-            <h4>Financing</h4>
+            <h5 class="tab-section-title">Financing</h5>
 
-            <hr />
             <div class="row">
-                <h5 class="tab-section-title">At a glance</h5>
                 <div class="item-container one col m6 s12">
                     <p class="item item-title"><a class="link-style" href="https://www.dbs.com.sg/personal/cards/default.page"
                             target="_blank">Credit Cards ></a></p>
@@ -475,7 +406,54 @@
                 <p class="application-text">Application details and the terms and conditions can be found on <a href="http://mydbs.net/Staff_Corner/Reward/Benefits/Staff_Loans.aspx"
                         target="_blank" class="link-style">Intranet page on staff loans</a>.</p>
             </div>
+        </div>
 
+        <div class="application-section row">
+            <h5 class="tab-section-title">Account Application <span class="footnotes red white-text">Present staff pass
+                    for identification where applicable</span></h5>
+            <div class="row">
+                <div class="col m12 l3">
+                    <div class="card">
+                        <div class="card-content">
+                            <span class="card-title">New Single Account</span>
+                            <a href="https://www.dbs.com.sg/personal/deposits/bank-with-ease/addon-casa?cid=sg-dbs-vanity-deposits-addon-casa" target="_blank"><div
+                                    class="btn red">Apply now</div></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col m12 l3">
+                    <div class="card">
+                        <div class="card-content">
+                            <span class="card-title">New Joint Account</span><span class="red white-text">with parent, spouse
+                                or child</span>
+                            <p>Application is only available at POSB / DBS branches.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col m12 l3">
+                    <div class="card">
+                        <div class="card-content">
+                            <span class="card-title">Existing Account</span>
+                            <a class="link-style" href="http://mydbs.net/uploadedFiles/Departments/Human_Resource/Singapore/Staff_Corner/Forms(1)/Benefits_and_Pay/Pay/staff%20app%20form.pdf"
+                                target="_blank"><i class="material-icons red-text">picture_as_pdf
+                                </i>Application by hardcopy form submission</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col m12 l3">
+                    <div class="card">
+                        <div class="card-content">
+                            <span class="card-title">All other accounts</span>
+                            <a class="link-style" href="https://www.dbs.com.sg/personal/default.page" target="_blank"><i
+                                    class="material-icons red-text">web</i>
+                                Application details available on the bank's website.</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
 
         <!-- Footer -->

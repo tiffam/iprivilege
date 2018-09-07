@@ -32,7 +32,7 @@ M.Autocomplete.init(ac, {
     }
 });
 
-function openTab(evt, cityName) {
+function openTab(evt, name) {
     // Declare all variables
     let i, tabcontent, tablinks;
 
@@ -49,7 +49,7 @@ function openTab(evt, cityName) {
     }
 
     // Show the current tab, and add an "active" class to the button that opened the tab
-    document.getElementById(cityName).style.display = "block";
+    document.getElementById(name).style.display = "block";
     evt.currentTarget.className += " active";
 }
 
@@ -80,9 +80,9 @@ function openNav() {
     if (document.getElementById("promotions-layer").className.includes("hidden") === false) {
         document.getElementById("promotions-layer").classList.add("hidden");
     }
-    if (document.getElementById("terms-layer").className.includes("hidden") === false) {
-        document.getElementById("terms-layer").classList.add("hidden");
-    }
+    // if (document.getElementById("terms-layer").className.includes("hidden") === false) {
+    //     document.getElementById("terms-layer").classList.add("hidden");
+    // }
     let contact = document.getElementById("contact-layer")
     contact.className = contact.className.replace("hidden", "");
 }
@@ -99,8 +99,8 @@ function openNavTerm() {
         document.getElementById("contact-layer").classList.add("hidden");
     }
 
-    let terms = document.getElementById("terms-layer")
-    terms.className = terms.className.replace("hidden", "");
+    // let terms = document.getElementById("terms-layer")
+    // terms.className = terms.className.replace("hidden", "");
 }
 
 function openNavPromo() {
@@ -110,9 +110,9 @@ function openNavPromo() {
      if (document.getElementById("contact-layer").className.includes("hidden") === false) {
         document.getElementById("contact-layer").classList.add("hidden")
     }
-    if (document.getElementById("terms-layer").className.includes("hidden") === false) {
-        document.getElementById("terms-layer").classList.add("hidden");
-    }
+    // if (document.getElementById("terms-layer").className.includes("hidden") === false) {
+    //     document.getElementById("terms-layer").classList.add("hidden");
+    // }
 
     let promo = document.getElementById("promotions-layer")
     promo.className = promo.className.replace("hidden", "");
@@ -120,10 +120,10 @@ function openNavPromo() {
 
 
 function closeNav(itemType) { //hides contact layer if open
-    if (itemType === "terms") {
-        let itemType = document.getElementById("terms-layer");
-        itemType.classList.add("hidden");
-    }
+    // if (itemType === "terms") {
+    //     let itemType = document.getElementById("terms-layer");
+    //     itemType.classList.add("hidden");
+    // }
 
     if (itemType === "contact") {
         let itemType = document.getElementById("contact-layer");
@@ -138,7 +138,7 @@ function closeNav(itemType) { //hides contact layer if open
     if (itemType === "all") { //hides any displayed nav layer if open
         document.getElementById("contact-layer").classList.add("hidden");
         let promo = document.getElementById("promotions-layer").classList.add("hidden");
-        let terms = document.getElementById("terms-layer").classList.add("hidden");
+        // let terms = document.getElementById("terms-layer").classList.add("hidden");
     }
 
 }
