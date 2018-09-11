@@ -1,4 +1,17 @@
-  body {
+@font-face {
+    font-family:"Open Sans bold";
+    /* src: url("./font/OpenSans-Regular.ttf"); */
+    src: url("./font/OpenSans-ExtraBold.ttf");
+  }
+
+  @font-face {
+    font-family:"Open Sans";
+    src: url("./font/OpenSans-Regular.ttf");
+
+  }
+ 
+ 
+ body {
       margin: 0;
   }
 
@@ -14,9 +27,62 @@
     top: 40%;
   }
 
+/* banner */
+
   #banner-image {
-    margin: 0 auto;
+    /* margin: 0 auto; */
+    background-image: url("./images/new_banner.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 60vh;
+    width: 100%;
 }
+
+  .banner-content {
+    position: absolute;
+    background-color: white;
+    font-family: "Open Sans bold";
+    top: 60px;
+    left: 50px;
+    width: 65vh;
+    font-size: 1.2em;
+    letter-spacing: -1px;
+    padding: 20px;
+  } 
+
+  .banner-content-slogan, .banner-content-title {
+    text-transform: uppercase;
+    font-weight: 800;
+    margin: -10px 0;
+  }
+
+  .banner-content-slogan {
+      color: white;
+      background-color:#FF5B29;
+      font-weight: 800;
+      display: inline-block;
+      padding: 0 5px;
+      font-size: 1.5em;
+      margin-bottom: 0;
+  }
+
+  .banner-content-title {
+      padding: 0 10px;
+      margin-top: 0;
+      padding-left: 0;
+      line-height: 0.9;
+
+  }
+
+  .banner-content-message {
+      font-family: "Open Sans";
+ 
+  }
+
+  .main-banner {
+      position: relative;
+  }
+
 
   .brand-logo {
       margin-left: 10px;
@@ -43,10 +109,6 @@
     background-color: darkred;
   }
 
-  .main-banner {
-    background-color: #FFF0D1!important;
-  }
-
   h5 {
       font-size: 20px;
       text-align: center;
@@ -56,6 +118,7 @@
 
   .tag-line {
       font-size: 2em;
+      font-family: "Open Sans bold"
   }
 
   h4 {
@@ -79,6 +142,17 @@
     background-color: white;
     position: sticky;
     top: 0;
+}
+
+.img-tab {
+    color: blackl
+}
+
+.tab-category {
+    display: block;
+    padding: 0;
+    margin: 0;
+    font-size: 0.8em;
 }
 
 /* Style the buttons that are used to open the tab content */
@@ -300,7 +374,6 @@ footer {
 
 .bold {
     font-weight: 500;
-    /* color: red; */
 }
 
 .border-right {
@@ -360,17 +433,12 @@ footer {
 }
 
 .tab-section-title {
-    /* margin-top: -20px; */
     padding-bottom: 10px;
     text-align: left;
     font-size: 2.2em;
     text-transform: uppercase;
     border-bottom: 1px solid gray;
 
-}
-
-.application-section {
-    margin: 0 50px;
 }
 
 .card {
@@ -390,9 +458,43 @@ footer {
     font-size: 0.5em;
     text-transform: lowercase!important;
     font-weight: 100;
-    
 }
 
 span {
     padding: 0 5px;
+}
+
+.collapsible-accordion {
+    display: block;
+    min-height: 250px;
+    margin: 0;
+    background-color: #FFF0D1;
+    box-shadow: none;
+    /* padding: 20px 0; */
+    /* border-bottom: 1px #ddd solid; */
+}
+
+.collapsible-header {
+    background-color: #FFF0D1;
+    /* margin-top: 20px; */
+    display: block;
+}
+
+.collapsible-content {
+    padding: 20px!important;
+}
+
+.collapsible-accordion {
+    height: 500px;
+}
+
+.add {
+    color: #ff3333;;
+    border: 1px solid #ff3333;
+}
+
+.collapsible-header:hover {
+    background-color: red;
+    color: white;
+    transition-duration: 0.5s;
 }

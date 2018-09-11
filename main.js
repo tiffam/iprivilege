@@ -148,7 +148,9 @@ document.getElementById("tab-large")
 
 //initialization for collapsible component
 
-// document.addEventListener('DOMContentLoaded', function() {
-//     var elems = document.querySelectorAll('.collapsible');
-//     var instances = M.Collapsible.init(elems, options);
-//   });
+document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.collapsible');
+    var instances = M.Collapsible.init(elems, true);
+});
+
+
