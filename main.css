@@ -205,7 +205,7 @@
     text-align: center;
     width: 100%;
     z-index: 2;
-    margin-top: 50px
+    margin-top: 40px;
 }
 
 #tab-med {
@@ -216,6 +216,10 @@
 .tablinks {
     float: none; /*to make sure there is no active float*/
     display: inline-block;
+}
+
+.add-margin {
+    margin-top: 50px;
 }
 
 .img-tab img{
@@ -273,6 +277,11 @@ a {
     #slogan {
         font-size: 1.25em;
     }
+
+    .add-margin {
+        margin-top: 0;
+    }
+    
 }
 
 @media only screen and (max-width: 412px) {

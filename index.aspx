@@ -11,7 +11,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 </head>
 
-<body onscroll="closeNav('all')">
+<body onscroll="reset('all')">
     <div class="spinner-container">
         <div class="preloader-wrapper big active">
             <div class="spinner-layer spinner-red-only">
@@ -72,7 +72,7 @@
 
 
 
-        <div class="hidden z-depth-1" id="promotions-layer" onmouseleave="closeNav('promo')">
+        <div class="hidden z-depth-1" id="promotions-layer" onmouseleave="reset('promo')">
             <div class="row">
                 <div class="col s1 border-right">
                     <h4>Promotions</h4>
@@ -88,7 +88,7 @@
             </div>
         </div>
 
-        <div class="hidden z-depth-1" id="contact-layer" onmouseleave="closeNav('contact')">
+        <div class="hidden z-depth-1" id="contact-layer" onmouseleave="reset('contact')">
             <div class="row">
                 <div class="col s1 border-right">
                     <h4>Contact Us</h4>
@@ -320,8 +320,14 @@
                         target="_blank" class="link-style">Intranet page on Corporate Rates for DBS employee on
                         insurance products</a>.</p>
             </div>
-
-
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
         </div>
 
         <div id="invest_tab" class="tabcontent">

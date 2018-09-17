@@ -1,8 +1,3 @@
-///spinner
-
-
-
-
 // Side Menu
 const sideNav = document.querySelector('.sidenav');
 M.Sidenav.init(sideNav, {});
@@ -41,17 +36,17 @@ function openTab(evt, name) {
     for (i = 0; i < tabcontent.length; i++) {
         tabcontent[i].style.display = "none";
     }
-
-    // Get all elements with class="tablinks" and remove the class "active"
+    // Get all elements with class="tablinks" and remove the class "active" -> changes text of the selected category from black to red
     tablinks = document.getElementsByClassName("tablinks");
     for (i = 0; i < tablinks.length; i++) {
         tablinks[i].className = tablinks[i].className.replace(" active", "");
     }
-
-    // Show the current tab, and add an "active" class to the button that opened the tab
+    // Show the current tab, and add an "active" class to the button that opened the tab -> Displays the content of the selected category
+    
+    document.getElementById(name).classList.add("add-margin");
     document.getElementById(name).style.display = "block";
-    evt.currentTarget.className += " active";
 }
+
 
 
 // added polyfill for includes as global variable 
@@ -71,7 +66,7 @@ var includePolyfill = function() {
         }
         };
     }
-    }
+}
 
 function openNav() {
 
@@ -119,7 +114,7 @@ function openNavPromo() {
 }
 
 
-function closeNav(itemType) { //hides contact layer if open
+function reset(itemType) { //hides nav if open & remove add-margin class for tab if it is added previously
     // if (itemType === "terms") {
     //     let itemType = document.getElementById("terms-layer");
     //     itemType.classList.add("hidden");
@@ -141,12 +136,21 @@ function closeNav(itemType) { //hides contact layer if open
         // let terms = document.getElementById("terms-layer").classList.add("hidden");
     }
 
+    // remove the add-margin after scrolling
+    let tabCat = ["save_tab", "finance_tab", "invest_tab", "finance_tab"];
+        
+        for (i = 0; i < tabCat.length - 1; i++) {
+        if (document.getElementById(tabCat[i]).classList.contains("add-margin")) {
+            document.getElementById(tabCat[i]).classList.remove("add-margin");
+        }
+    }
+
 }
 
 //controlling the tab when user scroll up
 document.getElementById("tab-large")
 
-//initialization for collapsible component
+//initialization for collapsible component for financing
 
 document.addEventListener('DOMContentLoaded', function() {
     var elems = document.querySelectorAll('.collapsible');
