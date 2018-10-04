@@ -109,7 +109,7 @@ function openNavPromo() {
     //     document.getElementById("terms-layer").classList.add("hidden");
     // }
 
-    let promo = document.getElementById("promotions-layer")
+    let promo = document.getElementById("promotions-layer");
     promo.className = promo.className.replace("hidden", "");
 }
 
