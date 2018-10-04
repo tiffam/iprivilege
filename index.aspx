@@ -121,7 +121,7 @@
             </div>
         </div>
         <div class="align-center">
-            <h5 class="tag-line">iPrivilege, an exclusive preferential <br /> banking privilege for DBS employees</h5>
+            <h5 class="tag-line">iPrivilege, an exclusive preferential banking privilege for DBS employees</h5>
         </div>
 
 
@@ -591,7 +591,7 @@
 
     </footer>
 
-    </div>
+
     <!-- </div> -->
     <!--JavaScript at end of body for optimized loading-->
     <script type="text/javascript" src="js/materialize.min.js"></script>
