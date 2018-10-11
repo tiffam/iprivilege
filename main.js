@@ -36,10 +36,10 @@ function openTab(evt, name) {
     for (i = 0; i < tabcontent.length; i++) {
         tabcontent[i].style.display = "none";
     }
-    // Get all elements with class="tablinks" and remove the class "active" -> changes text of the selected category from black to red
+    // Get all elements with class="tablinks" and remove the class "active" -> changes the gray background of the selected category from gray to white
     tablinks = document.getElementsByClassName("tablinks");
     for (i = 0; i < tablinks.length; i++) {
-        tablinks[i].className = tablinks[i].className.replace(" active", "");
+        tablinks[i].className = tablinks[i].className.replace("active", "");
     }
     // Show the current tab, and add an "active" class to the button that opened the tab -> Displays the content of the selected category
     
@@ -137,13 +137,14 @@ function reset(itemType) { //hides nav if open & remove add-margin class for tab
     }
 
     // remove the add-margin after scrolling
-    let tabCat = ["save_tab", "finance_tab", "invest_tab", "finance_tab"];
+    // let tabCat = ["save_tab", "finance_tab", "invest_tab", "finance_tab"];
         
-        for (i = 0; i < tabCat.length - 1; i++) {
-        if (document.getElementById(tabCat[i]).classList.contains("add-margin")) {
-            document.getElementById(tabCat[i]).classList.remove("add-margin");
-        }
-    }
+    //     for (i = 0; i < tabCat.length - 1; i++) {
+        // if (document.getElementById(tabCat[i]).classList.contains("add-margin")) {
+        //     document.getElementById(tabCat[i]).classList.remove("add-margin");
+        // }
+    //     document.getElementById(tabCat[i]).classList.remove("add-margin");
+    // }
 
 }
 
@@ -156,5 +157,4 @@ document.addEventListener('DOMContentLoaded', function() {
     var elems = document.querySelectorAll('.collapsible');
     var instances = M.Collapsible.init(elems, true);
 });
-
 

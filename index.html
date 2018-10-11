@@ -56,10 +56,10 @@
         <!-- Navigation bar for mobile-->
         <ul class="sidenav" id="mobile-demo">
             <li>
-                <a href="#">Promotions</a>
+                <a href="promotions.aspx">Promotions</a>
             </li>
             <li>
-                <a href="#">Contact Us</a>
+                <a href="contact.aspx">Contact Us</a>
             </li>
             <li>
                 <a href="https://internet-banking.dbs.com.sg/" target="_blank"><i class="material-icons right">lock</i>iBanking
@@ -95,8 +95,8 @@
                 </div>
                 <div class="col s4">
                     <p><span class="bold">Our hotline:</span> 1800-7832700</p>
-                    <p><span class="bold">Our email address:</span> <a href="mailto:staffbanking@dbs.com?subject=Contact Us - iPrivilege">
-                            staffbanking@dbs.com</a></p>
+                    <p><span class="bold">Our email address:</span> <a href="mailto:iPrivileges_SG@dbs.com?subject=Contact Us - iPrivilege">
+                            iPrivileges_SG@dbs.com</a></p>
                 </div>
                 <div class="col s4">
                     <p><span class="bold">Our operating hours:</span> <br />Mon - Fri: 9:30 AM - 5:00 PM<br /> Sat, Sun
@@ -108,16 +108,20 @@
 
         <!-- Main banner with image and text -->
 
-        <div class="main-banner">
-            <div id="banner-image" class="z-depth-1">
-            </div>
-            <div class="banner-content">
-                <h4 class="banner-content-slogan">More Privileges</h4>
-                <h1 class="banner-content-title">Take <br /> your pick</h1>
-                <p class="banner-content-message">From deposits to loans, you can pick a mix of products and services
-                    that are among
-                    the best in the market
-                </p>
+        <div class="main-banner z-depth-1">
+                
+            <div id="banner-image">
+                <div class="banner-content">
+                    <div class="banner-wrapper">
+                        <h4 class="banner-content-slogan">More Privileges</h4>
+                        <h1 class="banner-content-title">Take <br /> your pick</h1>
+                        <p class="banner-content-message">From deposits to loans, you can pick a mix of products and
+                            services
+                            that are among
+                            the best in the market
+                        </p>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="align-center">
@@ -138,10 +142,12 @@
         </div>
 
         <div id="tab-med" class="tab z-depth-2 hide-on-large-only">
-            <button class="tablinks img-tab active" onclick="openTab(event, 'save_tab')">Saving</button>
-            <button class="tablinks img-tab" onclick="openTab(event, 'protect_tab')">Protecting</button>
-            <button class="tablinks img-tab" onclick="openTab(event, 'invest_tab')">Investing</button>
-            <button class="tablinks img-tab" onclick="openTab(event, 'finance_tab')">Financing</button>
+            <a href="#tab-med"><button class="tablinks img-tab active" onclick="openTab(event, 'save_tab')">Saving</button></a>
+            <a href="#tab-med"><button class="tablinks img-tab" onclick="openTab(event, 'protect_tab')">Protecting</button></a>
+            <span class="tab-break-point">
+                <a href="#tab-med"><button class="tablinks  img-tab" onclick="openTab(event, 'invest_tab')">Investing</button></a>
+                <a href="#tab-med"><button class="tablinks img-tab" onclick="openTab(event, 'finance_tab')">Financing</button></a>
+            </span>
         </div>
 
         <!-- Tab content -->
@@ -197,53 +203,36 @@
 
             <div class="application-section row">
                 <h5 class="tab-section-title">Account Application <span class="footnotes red white-text">Present
-                        staff pass
-                        for identification where applicable</span></h5>
+                        staff pass where applicable</span></h5>
                 <div class="row">
-                    <div class="col m12 l3">
-                        <div class="card">
-                            <div class="card-content">
-                                <span class="card-title">New Single Account</span>
-                                <a href="https://www.dbs.com.sg/personal/deposits/bank-with-ease/addon-casa?cid=sg-dbs-vanity-deposits-addon-casa"
-                                    target="_blank">
-                                    <div class="btn red">Apply now</div>
-                                </a>
-                            </div>
-                        </div>
+                    <div class="m12 l3 account-type">
+                        <h4>New Single Account</h4>
+                        <a href="https://www.dbs.com.sg/personal/deposits/bank-with-ease/addon-casa?cid=sg-dbs-vanity-deposits-addon-casa"
+                            target="_blank">
+                            <div class="btn red">Apply now</div>
+                        </a>
                     </div>
 
-                    <div class="col m12 l3">
-                        <div class="card">
-                            <div class="card-content">
-                                <span class="card-title">New Joint Account</span><span class="red white-text">with
-                                    parent,
-                                    spouse
-                                    or child</span>
-                                <p>Applyat POSB / DBS branches.</p>
-                            </div>
-                        </div>
+                    <div class="m12 l3 account-type">
+                        <h4>New Joint Account</h4><span class="red white-text">with
+                            parent,
+                            spouse
+                            or child</span>
+                        <p>Apply at POSB / DBS branches.</p>
                     </div>
 
-                    <div class="col m12 l3">
-                        <div class="card">
-                            <div class="card-content">
-                                <span class="card-title">Existing Account</span>
-                                <a class="link-style" href="http://mydbs.net/uploadedFiles/Departments/Human_Resource/Singapore/Staff_Corner/Forms(1)/Benefits_and_Pay/Pay/staff%20app%20form.pdf"
-                                    target="_blank"><i class="material-icons red-text">picture_as_pdf
-                                    </i>Application by hardcopy form submission</a>
-                            </div>
-                        </div>
+                    <div class="m12 l3 account-type">
+                        <h4>Existing Account</h4>
+                        <a class="link-style" href="http://mydbs.net/uploadedFiles/Departments/Human_Resource/Singapore/Staff_Corner/Forms(1)/Benefits_and_Pay/Pay/staff%20app%20form.pdf"
+                            target="_blank"><i class="material-icons red-text">picture_as_pdf
+                            </i>Application by hardcopy form submission</a>
                     </div>
 
-                    <div class="col m12 l3">
-                        <div class="card">
-                            <div class="card-content">
-                                <span class="card-title">All other accounts</span>
-                                <a class="link-style" href="https://www.dbs.com.sg/personal/default.page" target="_blank"><i
-                                        class="material-icons red-text">web</i>
-                                    Application details available on the bank's website.</a>
-                            </div>
-                        </div>
+                    <div class="m12 l3 account-type">
+                        <h4>All other accounts</h4>
+                        <a class="link-style" href="https://www.dbs.com.sg/personal/default.page" target="_blank"><i
+                                class="material-icons red-text">web</i>
+                            Application details available on the bank's website.</a>
                     </div>
                 </div>
             </div>
@@ -307,6 +296,8 @@
                     <ul>
                         <li class="item-description">Up to 25% corporate rate on qualifying products by Chubb
                         </li>
+                        <li class="item-description">20% corporate rate on qualifying car insurance products by MSIG and NTUC Income
+                            </li>
                     </ul>
                 </div>
             </div>
@@ -317,6 +308,17 @@
                         target="_blank" class="link-style">Intranet page on Corporate Rates for DBS employee on
                         insurance products</a>.</p>
             </div>
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
 
         </div>
 
@@ -480,7 +482,8 @@
 
                     <ul class="collapsible collapsible-accordion">
                         <li>
-                            <div class="collapsible-header" tabindex="0"><i class="material-icons add">add</i>Credit Cards</div>
+                            <div class="collapsible-header" tabindex="0"><i class="material-icons add">add</i>Credit
+                                Cards</div>
                             <div class="collapsible-body">
                                 <div class="red btn"><a href=" http://www.dbs.com.sg/personal/ib-anchor/redirect-cardstp.html"
                                         target="_blank" class="white-text">Apply now</a></div>
@@ -507,7 +510,8 @@
                         </li>
                         <li>
                             <div class="collapsible-header"><i class="material-icons add">add</i>Staff Renovation Loan</div>
-                            <div class="collapsible-body" tabindex="0"><span class="item-description">Complete the <a href="http://mydbs.net/uploadedFiles/Departments/Consumer_Banking_Group/Singapore/Consumer_Deposits_and_Secured_Lending/Mortgage/Tools_and_Resources/20160327%20DBS%20Mortgage%20All-in-one%20Application%20Form%20V8.pdf"
+                            <div class="collapsible-body" tabindex="0"><span class="item-description">Complete the <a
+                                        href="http://mydbs.net/uploadedFiles/Departments/Consumer_Banking_Group/Singapore/Consumer_Deposits_and_Secured_Lending/Mortgage/Tools_and_Resources/20160327%20DBS%20Mortgage%20All-in-one%20Application%20Form%20V8.pdf"
                                         class="link-style" target="_blank">
                                         Staff Renovation Loan application form</a> and submit the hardcopy to Group HR.</span></div>
                         </li>
