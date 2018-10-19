@@ -46,13 +46,13 @@ function openTab(evt, name) {
     
     document.getElementById(name).style.display = "block";
 
-    let tabCat = ["save_tab", "protect_tab", "invest_tab", "finance_tab"];
+    // let tabCat = ["save_tab", "protect_tab", "invest_tab", "finance_tab"];
         
 
-    if (document.getElementById(name).classList.contains("add-margin")) {
-        } else {
-            document.getElementById(name).classList.add("add-margin");
-        }
+    // if (document.getElementById(name).classList.contains("add-margin")) {
+    //     } else {
+    //         document.getElementById(name).classList.add("add-margin");
+    //     }
     }    
 
 
