@@ -43,10 +43,17 @@ function openTab(evt, name) {
     }
     // Show the current tab, and add an "active" class to the button that opened the tab -> Displays the content of the selected category
     
-    document.getElementById(name).classList.add("add-margin");
+    
     document.getElementById(name).style.display = "block";
-}
 
+    let tabCat = ["save_tab", "protect_tab", "invest_tab", "finance_tab"];
+        
+
+    if (document.getElementById(name).classList.contains("add-margin")) {
+        } else {
+            document.getElementById(name).classList.add("add-margin");
+        }
+    }    
 
 
 // added polyfill for includes as global variable 
@@ -137,14 +144,16 @@ function reset(itemType) { //hides nav if open & remove add-margin class for tab
     }
 
     // remove the add-margin after scrolling
-    // let tabCat = ["save_tab", "finance_tab", "invest_tab", "finance_tab"];
+    let tabCat = ["save_tab", "protect_tab", "invest_tab", "finance_tab"];
         
-    //     for (i = 0; i < tabCat.length - 1; i++) {
-        // if (document.getElementById(tabCat[i]).classList.contains("add-margin")) {
-        //     document.getElementById(tabCat[i]).classList.remove("add-margin");
-        // }
-    //     document.getElementById(tabCat[i]).classList.remove("add-margin");
-    // }
+        for (i = 0; i < tabCat.length - 1; i++) {
+            // document.getElementById(tabCat[i]).classList.remove("add-margin");
+
+        if (document.getElementById(tabCat[i]).classList.contains("add-margin")) {
+            document.getElementById(tabCat[i]).classList.remove("add-margin");
+        }
+       
+    }
 
 }
 

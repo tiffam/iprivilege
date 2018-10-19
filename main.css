@@ -9,8 +9,7 @@
     src: url("./font/OpenSans-Regular.ttf");
 
   }
- 
- 
+
  body {
       margin: 0;
       width: 100%;
@@ -49,12 +48,13 @@
     width: 45%;
     font-size: 1.2em;
     letter-spacing: -1px;
-    padding: 40px;
+    padding: 30px 40px;
     } 
 
   .banner-wrapper {
       background-color: white;
       padding: 20px;
+      width: 60%;
   }
 
   .banner-content-slogan, .banner-content-title {
@@ -84,6 +84,7 @@
       width: 100%;
  
   }
+
 
   .main-banner {
       position: relative;
@@ -118,7 +119,7 @@
   h5 {
       font-size: 20px;
       text-align: center;
-      padding-top: 5px;
+      /* padding-top: 5px; */
       font-weight: 800;
   }
 
@@ -189,6 +190,13 @@
     background-color: #FFF0D1 
 }
 
+.tabcontent-show {
+    padding: 6px 12px;
+    border-top: none;
+    background-color: #FFF0D1 
+}
+
+
 #promotions-layer, #terms-layer, #contact-layer {
     z-index: 10;
 }
@@ -220,7 +228,8 @@
 }
 
 .add-margin {
-    margin-top: 50px;
+    padding-top: 50px;
+    /* background-color: #FFF0D1; */
 }
 
 .img-tab img{
@@ -278,10 +287,19 @@ a {
 
 .account-type {
     padding-bottom: 10px;
-    box-shadow: 0 2px 1px -3px black;
-    s
-}
+    border-bottom: 0.5px lightgray solid;
+    }
 
+
+/* ********  ********  ********  ********  ******** *********/
+
+
+@media only screen and (max-width: 1024px) {
+
+    .banner-wrapper {
+        width: 100%;
+    }
+}
 
 /* ********  ********  ********  ********  ******** *********/
 
@@ -297,6 +315,7 @@ a {
         margin: 0;
         margin-top: 180px;
         padding: 10px;
+        width: 100%;
     }
 
     #banner-image {
@@ -336,8 +355,8 @@ a {
         font-size: 1.2em;
         font-family: 'Open sans';
         font-weight: 800;
-        padding-top: 10px;
-        padding-bottom: 10px;
+        padding-top: 15px;
+        padding-bottom: 15px;
     }
 
     .tab-break-point {
@@ -430,7 +449,7 @@ footer {
 }
 
 .bold {
-    font-weight: 500;
+    font-weight: 800;
 }
 
 .border-right {
@@ -519,17 +538,17 @@ footer {
 }
 
 span {
-    padding: 0 5px;
+    /* padding: 0 5px; */
 }
 
 .collapsible-accordion {
     margin: 0;
-    background-color: #FFF0D1;
+    /* background-color: #FFF0D1; */
     box-shadow: none;
 }
 
 .collapsible-header {
-    background-color: #FFF0D1;
+    /* background-color: #FFF0D1; */
     display: block;
 }
 
@@ -538,8 +557,10 @@ span {
 }
 
 .add {
-    color: #ff3333;;
+    color: #ff3333;
     border: 1px solid #ff3333;
+    margin: 10px;
+    font-size: 0.5em;
 }
 
 .collapsible-header:hover {
@@ -583,11 +604,34 @@ span {
     text-align: left;
 }
 
-/* * {font-family:arial; margin:0; padding:0;} */
-.logo {font-size:40px; font-weight:bold;color:#00a; font-style:italic;}
-.intro {color:#777; font-style:italic; margin:10px 0;}
-/* .menu {background:#00a; color:#fff; height:40px; line-height:40px;letter-spacing:1px; width:100%;} */
-.content {margin-top:10px;}
-.menu-padding {padding-top:40px;}
-.content {padding:10px;}
-.content p {margin-bottom:20px;}
+.icons {
+    margin-top: 15px;
+    /* width: 90%; */
+    /* color: white; */
+    color: red;
+}
+
+.application-title {
+    /* color: #f54; */
+    /* background-color: white; */
+    text-align: left;
+    font-weight: 800;
+    font-size: 1.4em;
+}
+
+.application-description {
+    padding: 20px;
+}
+
+.round-number {
+    width: 20px;
+    height: 20px;
+    border-radius: 50px;
+    text-align: center;
+    color: white;
+    font-weight: 800;
+    /* padding: 10px; */
+    background-color:#ff3333;
+    display: inline-block;
+    margin: 0 10px;    
+}

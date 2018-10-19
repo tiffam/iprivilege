@@ -7,6 +7,7 @@
     <!--Import materialize.css-->
     <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
     <link type="text/css" rel="stylesheet" href="main.css" />
+    <title>iPrivilege Singapore</title>
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 </head>
@@ -37,7 +38,7 @@
             <nav class="black">
                 <div class="nav-wrapper">
                     <a href="#!" class="brand-logo">iPrivilege</a>
-                    <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                    <a href="#" data-target="mobile-demo" class="sidenav-trigger"><img class="icons" src="icons/menu.png"></a>
                     <ul class="right hide-on-med-and-down red">
                         <li class="nav-item" onmouseover="openNavPromo()">Promotions
                         </li>
@@ -69,8 +70,6 @@
         </ul>
 
         <!-- Navigation layers -->
-
-
 
         <div class="hidden z-depth-1" id="promotions-layer" onmouseleave="reset('promo')">
             <div class="row">
@@ -109,7 +108,7 @@
         <!-- Main banner with image and text -->
 
         <div class="main-banner z-depth-1">
-                
+
             <div id="banner-image">
                 <div class="banner-content">
                     <div class="banner-wrapper">
@@ -162,12 +161,14 @@
                     <ul>
                         <li class="item-description">1% above board rate on SGD deposits for staff account</li>
                         <li class="item-description">No monthly service charge or fall-below fee</li>
+                        <li class="item-description">Preferential rates for 1st party FX transactions made within the
+                            designated Staff account</li>
                     </ul>
                 </div>
 
                 <div class="item-container two col m6 s12">
                     <p class="item item-title"><a class="link-style" href="http://mydbs.net/uploadedFiles/Departments/Human_Resource/Singapore/Staff_Corner/Benefits_and_Pay/Staff%20Banking%20Privileges.pdf"
-                            target="_blank">SGD Fixed Account ></a></p>
+                            target="_blank">Fixed Deposit- Singapore Dollar ></a></p>
                     <ul>
                         <li class="item-description">0.5% above the prevailing tier rates for deposit amounts between
                             S$1,000
@@ -183,7 +184,7 @@
             <div class="row">
                 <div class="item-container three col m6 s12">
                     <p class="item item-title"><a class="link-style" href="http://mydbs.net/uploadedFiles/Departments/Human_Resource/Singapore/Staff_Corner/Benefits_and_Pay/Staff%20Banking%20Privileges.pdf"
-                            target="_blank">Foreign Currency Fixed Account ></a></p>
+                            target="_blank">Fixed Deposit -Foreign Currency ></a></p>
                     <ul>
                         <li class="item-description">Highest tier rate for placement period
                         </li>
@@ -202,41 +203,108 @@
             </div>
 
             <div class="application-section row">
-                <h5 class="tab-section-title">Account Application <span class="footnotes red white-text">Present
-                        staff pass where applicable</span></h5>
+                <h5 class="tab-section-title">Application <span class="footnotes red white-text">present staff pass
+                        where applicable</span></h5>
+
                 <div class="row">
-                    <div class="m12 l3 account-type">
-                        <h4>New Single Account</h4>
-                        <a href="https://www.dbs.com.sg/personal/deposits/bank-with-ease/addon-casa?cid=sg-dbs-vanity-deposits-addon-casa"
-                            target="_blank">
-                            <div class="btn red">Apply now</div>
-                        </a>
-                    </div>
 
-                    <div class="m12 l3 account-type">
-                        <h4>New Joint Account</h4><span class="red white-text">with
-                            parent,
-                            spouse
-                            or child</span>
-                        <p>Apply at POSB / DBS branches.</p>
-                    </div>
+                    <ul class="collapsible collapsible-accordion">
+                        <!-- <li>
+                            <div class="collapsible-header" tabindex="0"><i class="material-icons add">add</i>Life
+                                Insurance</div>
+                            <div class="collapsible-body">
+                                <p class="item-description"><a class="link-style" href="http://mydbs.net/Pages/ContentTemplate3.aspx?taxid=154935%20"
+                                        target="_blank"><i class="material-icons red-text">web</i>Refer to Intranet for
+                                        details</a></p>
+                            </div>
+                        </li> -->
+                        <li>
+                            <div class="collapsible-header"><i class="material-icons add">add</i>Savings and Current
+                                Account
+                            </div>
+                            <div class="collapsible-body" tabindex="0">
+                                <h4 class="application-title">Savings and Current Account</h4>
+                                <p class="bold">Have an existing account?</p>
+                                <p>Apply for existing POSB/DBS account to be tagged
+                                    with staff indicator via hardcopy form submission </a> to enjoy staff preferential
+                                    rates on selected
+                                    products.</p>
+                                <a class="btn red"href="http://mydbs.net/uploadedFiles/Departments/Human_Resource/Singapore/Staff_Corner/Forms(1)/Benefits_and_Pay/Pay/staff%20app%20form.pdf"
+                                    target="_blank">
+                                   Download Form
+                                </a>
 
-                    <div class="m12 l3 account-type">
-                        <h4>Existing Account</h4>
-                        <a class="link-style" href="http://mydbs.net/uploadedFiles/Departments/Human_Resource/Singapore/Staff_Corner/Forms(1)/Benefits_and_Pay/Pay/staff%20app%20form.pdf"
-                            target="_blank"><i class="material-icons red-text">picture_as_pdf
-                            </i>Application by hardcopy form submission</a>
-                    </div>
+                                <p class="bold">Want to apply for a new account? </p>
+                                <p>Open a new account online today. If you do not have an
+                                    existing deposit account with DBS, the online application will take approximately 5
+                                    working days. Your new account will be tagged automatically with staff indicator.
+                                    Alternatively, you can visit any POSB / DBS branch.
+                                <div><a class="btn red" href="https://www.dbs.com.sg/personal/deposits/bank-with-ease/addon-casa?cid=sg-dbs-vanity-deposits-addon-casa"
+                                    target="_blank">
+                                    Apply now
+                                </a></div>
+                                <p>For creation of joint account with
+                                    parent, spouse or child,
+                                    you can only apply at a POSB / DBS branch.</p>
+                            </div>
 
-                    <div class="m12 l3 account-type">
-                        <h4>All other accounts</h4>
-                        <a class="link-style" href="https://www.dbs.com.sg/personal/default.page" target="_blank"><i
-                                class="material-icons red-text">web</i>
-                            Application details available on the bank's website.</a>
-                    </div>
+                        </li>
+
+                        <li>
+                            <div class="collapsible-header"><i class="material-icons add">add</i>Fixed Deposit -
+                                Singapore Dollar </div>
+                            <div class="collapsible-body" tabindex="0">
+                                <h4 class="application-title">Fixed Deposit - Singapore Dollar</h4>
+                                <p>The DBS Singapore Dollar (S$) Fixed Deposit Account gives you the opportunity to
+                                    maximise your savings with attractive interest, while keeping your funds secure.
+                                </p>
+                                <p class="bold"><a class="red-text link-style" href="https://www.dbs.com.sg/personal/deposits/fixed-deposits/s-dollar-fixed-deposit"
+                                        target="_blank">Learn
+                                        more</a></p>
+                                <a class="btn red" href="http://www.dbs.com.sg/personal/ib-anchor/redirect-acct-open.html"
+                                    target="_blank">
+                                    Apply Now
+                                </a>
+
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="collapsible-header"><i class="material-icons add">add</i>Fixed Deposit -
+                                Foreign Currency </div>
+                            <div class="collapsible-body" tabindex="0">
+                                <h4 class="application-title">Fixed Deposit - Foreign Currency</h4>
+                                <p>The Foreign Currency Fixed Deposit Account gives you exposure to your chosen foreign
+                                    currency and allows you to earn potentially higher rates compared to S$ deposits.
+                                </p>
+                                <p class="bold"><a class="red-text link-style" href="https://www.dbs.com.sg/personal/deposits/fixed-deposits/foreign-currency-fixed-deposit"
+                                        target="_blank">Learn
+                                        more</a></p>
+                                <a class="btn red white-text" href="http://www.dbs.com.sg/personal/ib-anchor/redirect-acct-open.html"
+                                    target="_blank">Apply Now
+                                </a>
+
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="collapsible-header"><i class="material-icons add">add</i>Other transaction
+                                services</sup></div>
+                            <div class="collapsible-body" tabindex="0">
+                                <h4 class="application-title">Other transaction services</h4>
+                                <p>Enjoy fee waivers for chequebook charges fee, debit card annual fees, replacement of
+                                    ATM card and passbook/passcard and more. Download the guide for more details</p>
+                                <a class="red btn" href="http://mydbs.net/uploadedFiles/Departments/Human_Resource/Singapore/Staff_Corner/Benefits_and_Pay/Staff%20Banking%20Privileges.pdf"
+                                    target="_blank">
+                                    Download Guide
+                                </a>
+                            </div>
+                        </li>
+
+                    </ul>
+                    <br>
                 </div>
             </div>
-
         </div>
 
         <!-- <hr /> -->
@@ -278,7 +346,7 @@
             <h5 class="tab-section-title">Protecting</h5>
 
             <div class="row">
-                <div class="item-container one col m6 s12">
+                <!-- <div class="item-container one col m6 s12">
                     <p class="item item-title"><a class="link-style" href="http://mydbs.net/Pages/ContentTemplate3.aspx?taxid=154935%20"
                             target="_blank">Life Insurance ></a></p>
                     <ul>
@@ -288,7 +356,7 @@
                             Insurance
                         </li>
                     </ul>
-                </div>
+                </div> -->
 
                 <div class="item-container two col m6 s12">
                     <p class="item item-title"><a class="link-style" href="http://mydbs.net/Pages/ContentTemplate3.aspx?taxid=154935%20"
@@ -296,30 +364,120 @@
                     <ul>
                         <li class="item-description">Up to 25% corporate rate on qualifying products by Chubb
                         </li>
-                        <li class="item-description">20% corporate rate on qualifying car insurance products by MSIG and NTUC Income
-                            </li>
+                        <li class="item-description">20% corporate rate on qualifying car insurance products by MSIG
+                            and NTUC Income
+                        </li>
                     </ul>
                 </div>
             </div>
 
-            <div class="application-section row">
-                <h5 class="tab-section-title">Reference</h5>
-                <p class="application-text">Application details and the terms and conditions can be found on <a href="http://mydbs.net/Pages/ContentTemplate3.aspx?taxid=154935%20"
-                        target="_blank" class="link-style">Intranet page on Corporate Rates for DBS employee on
-                        insurance products</a>.</p>
-            </div>
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
 
+            <div class="application-section row">
+                <h5 class="tab-section-title">Application <span class="footnotes red white-text">present staff pass
+                        where applicable</span></h5>
+
+                <div class="row">
+
+                    <ul class="collapsible collapsible-accordion">
+                        <!-- <li>
+                            <div class="collapsible-header" tabindex="0"><i class="material-icons add">add</i>Life
+                                Insurance</div>
+                            <div class="collapsible-body">
+                                <p class="item-description"><a class="link-style" href="http://mydbs.net/Pages/ContentTemplate3.aspx?taxid=154935%20"
+                                        target="_blank"><i class="material-icons red-text">web</i>Refer to Intranet for
+                                        details</a></p>
+                            </div>
+                        </li> -->
+                        <li>
+                            <div class="collapsible-header"><i class="material-icons add">add</i>Travel
+                                Insurance <sup>25% OFF</sup>
+                            </div>
+                            <div class="collapsible-body" tabindex="0">
+                                <h4 class="application-title">TravellerShield Plus</h4>
+                                <p>Travel Protection of up to S$1,000,000 for your next trip.</p>
+                                <p>Apply for TravellerShield Plus online with your DBS
+                                    email account and enter Staff Promotion Code: <span class="bold red-text">DBSSTAFF</span>.</p>
+
+                                <div class="red btn"><a href="https://www.dbs.com.sg/personal/insurance/travel/travellershield-plus"
+                                        target="_blank" class="white-text">Apply now</a></div>
+
+                                <p>Alternatively, you can apply at a DBS/POSB Branch
+                                    or call DBS Contact Centre 1800 222 3333.</p>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="collapsible-header"><i class="material-icons add">add</i>Personal Accident <sup>20%
+                                    OFF</sup></div>
+                            <div class="collapsible-body" tabindex="0">
+                                <h4 class="application-title">Easy Protect</h4>
+                                <p>Live life worry-free with coverage of up to S$150,000. Apply at any DBS/POSB Branch.</p>
+                                <p class="bold"><a class="red-text link-style" href="https://www.posb.com.sg/personal/insurance/accident-health/personal-accident-plans/easy-protect"
+                                        target="_blank">Learn
+                                        more</a></p>
+                                <h4 class="application-title">Prime Protect</h4>
+                                <p>Enjoy the prime of your life with coverage of up to S$80,000. Apply at any DBS/POSB
+                                    Branch.</p>
+                                <p class="bold"><a class="red-text link-style" href="https://www.posb.com.sg/personal/insurance/accident-health/personal-accident-plans/prime-protect"
+                                        target="_blank">Learn
+                                        more</a></p>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="collapsible-header"><i class="material-icons add">add</i>Home Contents <sup>20%
+                                    OFF</sup></div>
+                            <div class="collapsible-body" tabindex="0">
+                                <h4 class="application-title">myHome Protect</h4>
+                                <p>Protect your home against the unexpected with up to S$320,000 coverage. Apply at any
+                                    DBS/POSB Branch.</p>
+                                <p class="bold"><a class="red-text link-style" href="https://www.posb.com.sg/personal/insurance/home-car/home/myhome-protect"
+                                        target="_blank">Learn
+                                        more</a></p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="collapsible-header"><i class="material-icons add">add</i>Maid Insurance <sup>20%
+                                    OFF</sup></div>
+                            <div class="collapsible-body" tabindex="0">
+                                <h4 class="application-title">Maid Protect</h4>
+                                <p>Care for your domestic helper with coverage of up to S$60,000 per year.</p>
+                                <p>Apply online with your DBS
+                                    email account and enter your Staff Promotion Code: <span class="bold red-text">DBSSTAFF</span>.</p>
+                                <div class="red btn"><a href="https://www.dbs.com.sg/personal/insurance/home-car/home/maid-protect"
+                                        target="_blank" class="white-text">Apply now</a></div>
+
+                                <p>Application should be submitted at least 7 days before your
+                                    intended Policy Start Date to ensure
+                                    sufficient time for transmission to MOM. The corporate discount is extended to your
+                                    spouse if he/she
+                                    is the registered employer of the foreign domestic worker and the Applicant of the
+                                    maid insurance
+                                    policy.
+                                </p>
+
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="collapsible-header"><i class="material-icons add">add</i>Car Insurance <sup>20%
+                                    OFF</sup></div>
+                            <div class="collapsible-body" tabindex="0">
+                                <h4 class="application-title">DriveShield or Drivo</h4>
+                                <p>Apply for DriveShield or Drivo online with your DBS email
+                                    account.</p>
+                                <div class="red btn"><a href="https://www.dbs.com.sg/personal/insurance/travel-and-car/car-insurance"
+                                        target="_blank" class="white-text">Apply now</a></div>
+                                <p>The corporate discount is extended to your spouse if he/she
+                                    is the registered owner of the car and the Applicant of the car insurance policy.
+                                </p>
+                            </div>
+                        </li>
+
+                    </ul>
+                    <br>
+                </div>
+            </div>
         </div>
 
         <div id="invest_tab" class="tabcontent">
@@ -343,15 +501,13 @@
 
                 <div class="item-container two col m6 s12">
                     <p class="item item-title"><a class="link-style" href="http://mydbs.net/uploadedFiles/Departments/Human_Resource/Singapore/Staff_Corner/Benefits_and_Pay/Staff%20Banking%20Privileges.pdf"
-                            target="_blank">Unit Trust ></a></p>
+                            target="_blank">Unit Trust and Investment-Linked Products Benefits ></a></p>
                     <ul>
                         <li class="item-description"> Discounted sales charge of 1.5% for all unit trust, except for
-                            Nikko
-                            AM Shenton Short Term Bond Fund (sales charge at 0.2%) and MyHome Funds
+                            Nikko AM Shenton Short Term Bond Fund (sales charge at 0.2%) and MyHome Funds
                         </li>
                         <li class="item-description">0% sales charge for lump sum investments and RSP using cash
-                            (current
-                            promotion)
+                            (current promotion)
                         </li>
 
                     </ul>
@@ -359,16 +515,6 @@
             </div>
 
             <div class="row">
-                <div class="item-container one col m6 s12">
-                    <p class="item item-title"><a class="link-style" href="http://mydbs.net/uploadedFiles/Departments/Human_Resource/Singapore/Staff_Corner/Benefits_and_Pay/dbsvo_commission_schedule_18may12__final.pdf"
-                            target="_blank"> Investment-Linked Products Benefits ></a></p>
-                    <ul>
-                        <li class="item-description">Discounted sales charge of 1.5% for all unit trust, except for
-                            Nikko
-                            AM Shenton Short Term Bond Fund (sales charge at 0.2%) and MyHome Funds
-                        </li>
-                    </ul>
-                </div>
 
                 <div class="item-container two col m6 s12">
                     <p class="item item-title"><a class="link-style" href="http://mydbs.net/uploadedFiles/Departments/Human_Resource/Singapore/Staff_Corner/Benefits_and_Pay/Staff%20Banking%20Privileges.pdf"
@@ -383,12 +529,114 @@
             </div>
 
             <div class="application-section row">
-                <h5 class="tab-section-title">Reference</h5>
-                <p class="application-text">Application details and the terms and conditions can be found on <a href="http://mydbs.net/uploadedFiles/Departments/Human_Resource/Singapore/Staff_Corner/Benefits_and_Pay/Staff%20Banking%20Privileges.pdf"
-                        target="_blank" class="link-style">Intranet page</a>.</p>
+                <h5 class="tab-section-title">Application <span class="footnotes red white-text">present staff pass
+                        where applicable</span></h5>
+
+                <div class="row">
+
+                    <ul class="collapsible collapsible-accordion">
+                        <!-- <li>
+                                <div class="collapsible-header" tabindex="0"><i class="material-icons add">add</i>Life
+                                    Insurance</div>
+                                <div class="collapsible-body">
+                                    <p class="item-description"><a class="link-style" href="http://mydbs.net/Pages/ContentTemplate3.aspx?taxid=154935%20"
+                                            target="_blank"><i class="material-icons red-text">web</i>Refer to Intranet for
+                                            details</a></p>
+                                </div>
+                            </li> -->
+                        <li>
+                            <div class="collapsible-header"><i class="material-icons add">add</i>Online Share Trading
+                            </div>
+                            <div class="collapsible-body" tabindex="0">
+                                <h4 class="application-title">Online Share Trading</h4>
+                                <p>Trade in multiple markets at special commission rates for self-directed online
+                                    trading with DBS Vickers
+                                    Securities. Your default credit limits will be based on your current corporate
+                                    rank.</p>
+                                <p class="bold"><a class="red-text link-style" href="http://mydbs.net/uploadedFiles/Departments/Human_Resource/Singapore/Staff_Corner/Benefits_and_Pay/dbsvo_commission_schedule_18may12__final.pdf"
+                                        target="_blank">Learn
+                                        more</a></p>
+                                <p class="bold">Have an existing account?</p>
+                                <p>Apply to convert your existing account to staff account by hardcopy form submission.
+                                </p>
+                                <div class="red btn"><a href="http://mydbs.net/uploadedFiles/Departments/Human_Resource/Singapore/Staff_Corner/Benefits_and_Pay/Conversion%20of%20Staff%20Account%20Form_2018.pdf"
+                                        target="_blank" class="white-text">Download form</a></div>
+                                <div class="red btn"><a href="https://www.dbs.com.sg/iwov-resources/vickers/en/pdf/BRE.pdf"
+                                        target="_blank" class="white-text">Download reply envelope</a></div>
+
+                                <p class="bold">Don't have an existing DBS Vickers account?</p>
+
+                                <p>Apply online now to enjoy special commmission rates. A hardcopy of your NRIC or
+                                    Passport and Employment Pass, your staff
+                                    pass and a letter of authorisation has to be submitted to DBS Vickers after your
+                                    online application.
+
+                                    <!-- <a href="https://www.dbs.com.sg/iwov-resources/vickers/en/pdf/BRE.pdf">
+                                        <img src="icons/picture_as_pdf.svg"> Business Reply Envelope</a></p>
+                                <ul>
+                                    <ol>Copy of NRIC or Passport and Employment Pass</ol>
+                                    <ol><a href="http://mydbs.net/uploadedFiles/Departments/Human_Resource/Singapore/Staff_Corner/Forms(1)/Benefits_and_Pay/Shares/shb_benefit_sl_loa.pdf"><img
+                                                src="icons/picture_as_pdf.svg">Letter
+                                            of authorisation</a></ol>
+                                    <ol>Copy of Staff Pass</ol>
+                                </ul>
+                                <br /> -->
+                                    <div class="red btn"><a href="https://internet-banking.dbs.com.sg/ibAPL/CIPVO.jsp"
+                                            target="_blank" class="white-text">Apply now</a></div>
+                                    <div class="red btn"><a href="http://mydbs.net/uploadedFiles/Departments/Human_Resource/Singapore/Staff_Corner/Forms(1)/Benefits_and_Pay/Shares/shb_benefit_sl_loa.pdf"
+                                            target="_blank" class="white-text">Download LOA</a></div>
+                                    <div class="red btn"><a href="https://www.dbs.com.sg/iwov-resources/vickers/en/pdf/BRE.pdf"
+                                            target="_blank" class="white-text">Download reply envelope</a></div>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="collapsible-header"><i class="material-icons add">add</i>Unit Trusts</div>
+                            <div class="collapsible-body" tabindex="0">
+                                <h4 class="application-title">Unit Trusts</h4>
+                                <p>Invest in Unit Trusts which are professionally managed funds to help you grow your
+                                    wealth. Apply online to enjoy discounted sales charge when investing.</p>
+                                <p class="bold"><a class="red-text link-style" href="https://www.dbs.com.sg/personal/investments/investing-in-funds/default.page"
+                                        target="_blank">Learn
+                                        more</a></p>
+                                <a href="https://internet-banking.dbs.com.sg/" target="_blank">
+                                    <div class="btn red">Apply now</div>
+                                </a>
+
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="collapsible-header"><i class="material-icons add">add</i>Investment-Linked
+                                Products Benefits</div>
+                            <div class="collapsible-body" tabindex="0">
+                                <h4 class="application-title">Investment-Linked Products Benefits</h4>
+                                <p>Invest with DBS. Apply at any POSB/DBS branch.</p>
+                                <p class="bold"><a class="red-text link-style" href="https://www.dbs.com.sg/personal/investments/default.page"
+                                        target="_blank">Learn
+                                        more</a></p>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="collapsible-header"><i class="material-icons add">add</i>Initial Public
+                                Offerings</sup></div>
+                            <div class="collapsible-body" tabindex="0">
+                                <h4 class="application-title">Initial Public Offerings</h4>
+                                <p>Apply under Electronic Shares Application (ESA) on iBanking or DBS/POSB ATM.</p>
+                                <p class="bold"><a class="red-text link-style" href="https://www.dbs.com.sg/personal/ibanking/faq/electronicsecurity.page"
+                                        target="_blank">Learn
+                                        more</a></p>
+                                <a href="https://internet-banking.dbs.com.sg/" target="_blank">
+                                    <div class="btn red">Apply now</div>
+                                </a>
+
+                            </div>
+                        </li>
+                    </ul>
+                    <br>
+                </div>
             </div>
-
-
         </div>
 
         <div id="finance_tab" class="tabcontent">
@@ -396,7 +644,7 @@
 
             <div class="row">
                 <div class="item-container one col m6 s12">
-                    <p class="item item-title"><a class="link-style" href="https://www.dbs.com.sg/personal/cards/default.page"
+                    <p class="item item-title"><a class="link-style" href="http://mydbs.net/uploadedFiles/Departments/Human_Resource/Singapore/Staff_Corner/Benefits_and_Pay/Staff%20Banking%20Privileges.pdf"
                             target="_blank">Credit Cards ></a></p>
                     <ul>
                         <li class="item-description">Waiver of annual subscription fee for principal and supplementary
@@ -411,12 +659,12 @@
                 </div>
 
                 <div class="item-container two col m6 s12">
-                    <p class="item item-title"><a class="link-style" href="https://www.dbs.com.sg/personal/loans/home-loans/default.page"
+                    <p class="item item-title"><a class="link-style" href="http://mydbs.net/uploadedFiles/Departments/Human_Resource/Singapore/Staff_Corner/Benefits_and_Pay/Attachments/Staff%20House%20Loan.pdf"
                             target="_blank">Staff Home Loan ></a></p>
                     <ul>
                         <li class="item-description">Preferential rate of 1% below 12-month Singapore Interbank Offered
                             Rate,
-                            calculated on a daily rest basis, subject to a minimum of 1% per annum.
+                            calculated on a daily rest basis, subject to a minimum of 1% per annum
                         </li>
                     </ul>
                 </div>
@@ -427,7 +675,8 @@
                     <p class="item item-title"><a class="link-style" href="http://mydbs.net/uploadedFiles/Departments/Human_Resource/Singapore/Staff_Corner/Benefits_and_Pay/Attachments/Staff%20Renovation%20Loan.pdf"
                             target="_blank">Staff Renovation Loan ></a></p>
                     <ul>
-                        <li class="item-description">Preferential rate of 4% per annum
+                        <li class="item-description">Preferential rate of 4% per annum calculated on a monthly reducing
+                            balance basis
                         </li>
                     </ul>
                 </div>
@@ -436,7 +685,8 @@
                     <p class="item item-title"><a class="link-style" href="http://mydbs.net/uploadedFiles/Departments/Human_Resource/Singapore/Staff_Corner/Benefits_and_Pay/Attachments/Staff%20Car%20Loan.pdf"
                             target="_blank">Staff Car Loan ></a></p>
                     <ul>
-                        <li class="item-description">Preferential rate of 2% per annum
+                        <li class="item-description">Preferential rate of 2% per annum on a monthly reducing balance
+                            basis
                         </li>
                     </ul>
                 </div>
@@ -447,7 +697,8 @@
                     <p class="item item-title"><a class="link-style" href="http://mydbs.net/uploadedFiles/Departments/Human_Resource/Singapore/Staff_Corner/Benefits_and_Pay/Attachments/Staff%20Study%20Loan.pdf"
                             target="_blank">Staff Study Loan ></a></p>
                     <ul>
-                        <li class="item-description">Preferential rate of 2% per annum
+                        <li class="item-description">Preferential rate of 2% per annum calculated on a monthly reducing
+                            balance basis
                         </li>
                     </ul>
                 </div>
@@ -456,7 +707,8 @@
                     <p class="item item-title"><a class="link-style" href="http://mydbs.net/uploadedFiles/Departments/Human_Resource/Singapore/Staff_Corner/Benefits_and_Pay/Attachments/Staff%20Personal%20Loan.pdf"
                             target="_blank">Staff Personal Loan ></a></p>
                     <ul>
-                        <li class="item-description">Preferential rate of 4% per annum
+                        <li class="item-description">Preferential rate of 4% per annum calculated on a monthly reducing
+                            balance basis
                         </li>
                     </ul>
                 </div>
@@ -467,7 +719,8 @@
                     <p class="item item-title"><a class="link-style" href="http://mydbs.net/uploadedFiles/Departments/Human_Resource/Singapore/Staff_Corner/Benefits_and_Pay/Further%20Study%20Assist%20Loan%20for%20Employee%E2%80%99s%20children%20-%20PDF.pdf"
                             target="_blank">Further Study Assist Loan for Employee's Children ></a></p>
                     <ul>
-                        <li class="item-description">Preferential rate of 2% per annum
+                        <li class="item-description">Preferential rate of 2% per annum calculated on a monthly reducing
+                            balance basis
                         </li>
                     </ul>
                 </div>
@@ -482,69 +735,103 @@
 
                     <ul class="collapsible collapsible-accordion">
                         <li>
-                            <div class="collapsible-header" tabindex="0"><i class="material-icons add">add</i>Credit
-                                Cards</div>
+                            <div class="collapsible-header" tabindex="0"><i class="material-icons add">add</i>
+                                Credit Cards</div>
                             <div class="collapsible-body">
+                                <h4 class="application-title">Credit Cards</h4>
+                                <p>Shop, tap, and be rewarded.</p>
+                                <p>Apply online for a credit card. Step-by-step instructions can be found in the credit
+                                    card application guide.</p>
                                 <div class="red btn"><a href=" http://www.dbs.com.sg/personal/ib-anchor/redirect-cardstp.html"
                                         target="_blank" class="white-text">Apply now</a></div>
-                                <p class="item-description">Refer to the <a href="http://mydbs.net/uploadedFiles/Departments/Human_Resource/Singapore/Staff_Corner/Benefits_and_Pay/Application%20of%20Credit%20Card%20via%20Internet%20Banking.pdf"
-                                        target="_blank" class="link-style">credit card application guide</a> for
-                                    step-by-step instructions</p>
+                                <div class="red btn"><a href="http://mydbs.net/uploadedFiles/Departments/Human_Resource/Singapore/Staff_Corner/Benefits_and_Pay/Application%20of%20Credit%20Card%20via%20Internet%20Banking.pdf"
+                                        target="_blank" class="white-text"> Download Guide</a></div>
+
                             </div>
                         </li>
                         <li>
                             <div class="collapsible-header"><i class="material-icons add">add</i>Staff Home Loan</div>
                             <div class="collapsible-body" tabindex="0">
-                                <p class="item-description">Complete the <a href="http://mydbs.net/uploadedFiles/Departments/Consumer_Banking_Group/Singapore/Consumer_Deposits_and_Secured_Lending/Mortgage/Tools_and_Resources/20160327%20DBS%20Mortgage%20All-in-one%20Application%20Form%20V8.pdf"
-                                        class="link-style" target="_blank">
-                                        Staff Home Loan application form</a> and ensure that you have the required
-                                    documents in the <a href="http://mydbs.net/uploadedFiles/Departments/Human_Resource/Singapore/Staff_Corner/Benefits_and_Pay/Attachments/Staff%20housing%20loan%20checklist%20.pdf"
-                                        class="link-style" target="_blank">Document Checklist</a>. Click below to send
-                                    your
-                                    completed application form. </p>
-                                <div class="red btn"><a class="white-text" href="mailto:staffmortgage@1bank.dbs.com?subject=Staff Home Loan Application">Submit
-                                        Form</a></div>
+                                <h4 class="application-title">Staff Home Loan</h4>
+                                <p>Apply online to get a loan for the purchase of your home, re-finance your
+                                    existing home loan or convert your existing home loan taken with DBS on commercial
+                                    terms. There
+                                    may be costs incurred upon termination of the home loan granted on commercial
+                                    terms.</p>
 
+                                <p class="bold"><a class="red-text link-style" href="http://mydbs.net/uploadedFiles/Departments/Human_Resource/Singapore/Staff_Corner/Benefits_and_Pay/Attachments/Staff%20House%20Loan.pdf"
+                                        target="_blank">Learn
+                                        more</a></p>
 
+                                <div class="red btn"><a href="https://www.dbs.com.sg/personal/landing/loans/homeloans/apply-now.html"
+                                        target="_blank" class="white-text">Apply now</a></div>
                             </div>
                         </li>
                         <li>
                             <div class="collapsible-header"><i class="material-icons add">add</i>Staff Renovation Loan</div>
-                            <div class="collapsible-body" tabindex="0"><span class="item-description">Complete the <a
-                                        href="http://mydbs.net/uploadedFiles/Departments/Consumer_Banking_Group/Singapore/Consumer_Deposits_and_Secured_Lending/Mortgage/Tools_and_Resources/20160327%20DBS%20Mortgage%20All-in-one%20Application%20Form%20V8.pdf"
-                                        class="link-style" target="_blank">
-                                        Staff Renovation Loan application form</a> and submit the hardcopy to Group HR.</span></div>
+                            <div class="collapsible-body" tabindex="0">
+                                <h4 class="application-title">Staff Renovation Loan</h4>
+                                <p>Finance the renovation cost of your home.</p>
+                                <p class="bold"><a class="red-text link-style" href="http://mydbs.net/uploadedFiles/Departments/Human_Resource/Singapore/Staff_Corner/Benefits_and_Pay/Attachments/Staff%20Renovation%20Loan.pdf"
+                                        target="_blank">Learn
+                                        more</a></p>
+                                <p>Apply by submitting the completed hardcopy form to Group HR. </p>
+                                <p> A copy of your NRIC (front and back) or passport, original invoice or quotation
+                                    from contractor duly signed by you and the contractor,
+                                    and proof of ownership of proporty to be renovated has to submited together with
+                                    your hardcopy form. </p>
+                                <div class="red btn"><a href="http://mydbs.net/uploadedFiles/Departments/Human_Resource/Singapore/Staff_Corner/Forms(1)/Benefits_and_Pay/Loans/Application%20for%20Staff%20Renovation%20Loan.pdf"
+                                        target="_blank" class="white-text">Download form</a></div>
+
+                            </div>
                         </li>
 
                         <li>
                             <div class="collapsible-header"><i class="material-icons add">add</i>Staff Car Loan</div>
                             <div class="collapsible-body" tabindex="0">
-                                <span class="item-description">Ensure that you have the required documents in the <a
-                                        href="http://mydbs.net/uploadedFiles/Departments/Human_Resource/Singapore/Staff_Corner/Benefits_and_Pay/Attachments/Staff%20Car%20Loan.pdf"
-                                        class="link-style" target="_blank">Document
-                                        Checklist </a>before application.</span>
+                                <h4 class="application-title">Staff Car Loan</h4>
+                                <p>Finance the purchase of your car.</p>
+                                <p class="bold"><a class="red-text link-style" href="http://mydbs.net/uploadedFiles/Departments/Human_Resource/Singapore/Staff_Corner/Benefits_and_Pay/Attachments/Staff%20Car%20Loan.pdf"
+                                        target="_blank">Learn
+                                        more</a></p>
+                                <p><span class="round-number">1</span>Apply online. <span class="round-number">2</span>Email
+                                    the required supporting documents to <a class="link-style" href="mailto:staffcarloan@dbs.com?subject=Staff Car Loan Application">staffcarloan@dbs.com</a>
+                                    on the same day of application.</p>
+
+
                                 <div>
                                     <a href="http://mydbs.net/Pages/contentTemplate3.aspx?id=172753" class="white-text btn red"
                                         target="_blank">Apply Now</a>
+
                                 </div>
-                            </div>
                         </li>
 
                         <li>
                             <div class="collapsible-header"><i class="material-icons add">add</i>Staff Study Loan</div>
                             <div class="collapsible-body" tabindex="0">
-                                <p class="item-description">Complete the<a href="http://mydbs.net/uploadedFiles/Departments/Human_Resource/Singapore/Staff_Corner/Forms(1)/Benefits_and_Pay/Loans/Application%20for%20Staff%20Study%20Loan.pdf"
-                                        class="link-style" target="_blank">
-                                        Staff Study Loan application form </a> and submit the hardcopy to Group HR.</p>
+                                <h4 class="application-title">Staff Study Loan</h4>
+                                <p>Finance the course fees for your part-time studies recommended by your supervising
+                                    manager and approved by your
+                                    BU/SU head. </p>
+                                <p class="bold"><a class="red-text link-style" href="http://mydbs.net/uploadedFiles/Departments/Human_Resource/Singapore/Staff_Corner/Benefits_and_Pay/Attachments/Staff%20Study%20Loan.pdf"
+                                        target="_blank">Learn
+                                        more</a></p>
+                                <p>Apply by submitting the completed hardcopy form to Group HR.</p>
+                                <a href="http://mydbs.net/uploadedFiles/Departments/Human_Resource/Singapore/Staff_Corner/Forms(1)/Benefits_and_Pay/Loans/Application%20for%20Staff%20Study%20Loan.pdf"
+                                    class="white-text btn red" target="_blank">Download form</a>
                             </div>
                         </li>
 
                         <li>
                             <div class="collapsible-header"><i class="material-icons add">add</i>Staff Personal Loan</div>
                             <div class="collapsible-body" tabindex="0">
-                                <p class="item-description">Complete the<a href="http://mydbs.net/uploadedFiles/Departments/Human_Resource/Singapore/Staff_Corner/Forms(1)/Benefits_and_Pay/Loans/Application%20for%20Staff%20Personal%20Loan.pdf"
-                                        class="link-style" target="_blank">
-                                        Staff Personal Loan application form </a> and submit the hardcopy to Group HR.</p>
+                                <h4 class="application-title">Staff Personal Loan</h4>
+                                <p>Get a personal loan to finance your non-frivolous expenditure. </p>
+                                <p class="bold"><a class="red-text link-style" href="http://mydbs.net/uploadedFiles/Departments/Human_Resource/Singapore/Staff_Corner/Benefits_and_Pay/Attachments/Staff%20Personal%20Loan.pdf"
+                                        target="_blank">Learn more</a></p>
+                                <p>Apply by submitting the hardcopy form to Group HR.</p>
+                                <div><a href="http://mydbs.net/uploadedFiles/Departments/Human_Resource/Singapore/Staff_Corner/Forms(1)/Benefits_and_Pay/Loans/Application%20for%20Staff%20Personal%20Loan.pdf"
+                                        class="white-text btn red" target="_blank">Download form</a></div>
                             </div>
                         </li>
 
@@ -553,10 +840,16 @@
                                 Loan
                                 for Employee's Children</div>
                             <div class="collapsible-body" tabindex="0">
-                                <p class="item-description">Complete the<a href="http://mydbs.net/uploadedFiles/Departments/Human_Resource/Singapore/Staff_Corner/Benefits_and_Pay/FSA%20for%20Child%20(Staff%20Guarantor)%20-%2004%20Apr%202018%20.pdf"
-                                        class="link-style" target="_blank">
-                                        Further Study Assist Loan application form </a> and submit the hardcopy to
-                                    T&O-SG-Credit Operations.</p>
+                                <h4 class="application-title">Further Study Assist Loan for Employee's Children</h4>
+                                <p>Stand in as Guarantor of a loan to finance your child's course fees.
+                                    The intended course must be taken from the list of <a href="https://www.posb.com.sg/iwov-resources/pdf/loans/education-loans/posb-further-study-assist/study_assist_institution(1).pdf">approved
+                                        institutions</a>.</p>
+                                <p class="bold"><a class="red-text link-style" href="http://mydbs.net/uploadedFiles/Departments/Human_Resource/Singapore/Staff_Corner/Benefits_and_Pay/Further%20Study%20Assist%20Loan%20for%20Employee%E2%80%99s%20children%20-%20PDF.pdf"
+                                        target="_blank">Learn
+                                        more</a></p>
+                                <p>Apply by submitting the hardcopy form to T&O-SG-Credit Operations.</p>
+                                <div><a href="http://mydbs.net/uploadedFiles/Departments/Human_Resource/Singapore/Staff_Corner/Benefits_and_Pay/FSA%20for%20Child%20(Staff%20Guarantor)%20-%2004%20Apr%202018%20.pdf"
+                                        class="white-text btn red" target="_blank">Download form</a></div>
                             </div>
                         </li>
                     </ul>
@@ -564,12 +857,12 @@
                 </div>
             </div>
 
-            <div class="application-section row">
+            <!-- <div class="application-section row">
                 <h5 class="tab-section-title">Reference</h5>
                 <p class="application-text">Details can be found on <a href="http://mydbs.net/Staff_Corner/Reward/Benefits/Staff_Loans.aspx"
                         target="_blank" class="link-style">Intranet page on staff loans</a> and <a href="http://mydbs.net/uploadedFiles/Departments/Human_Resource/Singapore/Staff_Corner/Benefits_and_Pay/Staff%20Banking%20Privileges.pdf"
                         target="_blank" class="link-style">staff banking privileges</a>.</p>
-            </div>
+            </div> -->
         </div>
     </div>
 
