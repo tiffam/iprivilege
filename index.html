@@ -2,13 +2,10 @@
 <html>
 
 <head>
-    <!--Import Google Icon Font-->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!--Import materialize.css-->
     <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
     <link type="text/css" rel="stylesheet" href="main.css" />
-    <title>iPrivilege Singapore</title>
-    <!--Let browser know website is optimized for mobile-->
+    <title>iPrivileges Singapore</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 </head>
 
@@ -29,19 +26,30 @@
         </div>
     </div>
 
-    <!-- Navigation bar -->
+    <div class="hide-on-med-and-up fixed-action-btn">
+        <a id="main-btn-floating" class="btn-floating btn-large red">
+            <i class="large material-icons">card_membership</i>
+        </a>
+        <ul>
+            <li><a class="btn-floating red" onclick="openTab(event, 'save_tab')" href="#save_tab">Save</a></li>
+            <li><a class="btn-floating red" onclick="openTab(event, 'protect_tab')" href="#protect_tab">Protect</a></li>
+            <li><a class="btn-floating red" onclick="openTab(event, 'invest_tab')" href="#invest_tab">Invest</a></li>
+            <li><a class="btn-floating red" onclick="openTab(event, 'finance_tab')" href="#finance_tab">Finance</a></li>
+        </ul>
+    </div>
 
+    <!-- Navigation bar -->
     <div id="loaded-document" class="hidden">
 
         <!-- Navigation for desktop -->
         <div class="navbar-fixed">
             <nav class="black">
                 <div class="nav-wrapper">
-                    <a href="#!" class="brand-logo">iPrivilege</a>
-                    <a href="#" data-target="mobile-demo" class="sidenav-trigger"><img class="icons" src="icons/menu.png"></a>
+                    <a href="index.aspx" class="brand-logo">iPrivileges</a>
+                    <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
                     <ul class="right hide-on-med-and-down red">
-                        <li class="nav-item" onmouseover="openNavPromo()">Promotions
-                        </li>
+                        <!-- <li class="nav-item" onmouseover="openNavPromo()">Promotions
+                        </li> -->
                         <li class="nav-item" onmouseover="openNav()">Contact Us
                         </li>
                         <li class="nav-item">
@@ -56,9 +64,9 @@
 
         <!-- Navigation bar for mobile-->
         <ul class="sidenav" id="mobile-demo">
-            <li>
+            <!-- <li>
                 <a href="promotions.aspx">Promotions</a>
-            </li>
+            </li> -->
             <li>
                 <a href="contact.aspx">Contact Us</a>
             </li>
@@ -70,9 +78,8 @@
         </ul>
 
         <!-- Navigation layers -->
-
         <div class="hidden z-depth-1" id="promotions-layer" onmouseleave="reset('promo')">
-            <div class="row">
+            <!-- <div class="row">
                 <div class="col s1 border-right">
                     <h4>Promotions</h4>
                 </div>
@@ -84,7 +91,7 @@
                     <a href="https://www.dbs.com.sg/personal/deposits/bank-with-ease/dbs50?pid=sg-dbs-pweb-bankhome-featured-cardtile-deposits-dbs50"
                         target="_blank"><img class="hoverable nav-promo-image" src="./images/mock-promo2.png"></a>
                 </div>
-            </div>
+            </div> -->
         </div>
 
         <div class="hidden z-depth-1" id="contact-layer" onmouseleave="reset('contact')">
@@ -93,38 +100,27 @@
                     <h4>Contact Us</h4>
                 </div>
                 <div class="col s4">
-                    <p><span class="bold">Our hotline:</span> 1800-7832700</p>
-                    <p><span class="bold">Our email address:</span> <a href="mailto:iPrivileges_SG@dbs.com?subject=Contact Us - iPrivilege">
-                            iPrivileges_SG@dbs.com</a></p>
-                </div>
-                <div class="col s4">
-                    <p><span class="bold">Our operating hours:</span> <br />Mon - Fri: 9:30 AM - 5:00 PM<br /> Sat, Sun
-                        and
-                        Public Holidays: Closed</p>
+                    <p><span class="bold">Our email address:</span> <a href="mailto:staffbanking@dbs.com?subject=Contact Us - iPrivileges">
+                            staffbanking@dbs.com</a></p>
                 </div>
             </div>
         </div>
 
         <!-- Main banner with image and text -->
-
         <div class="main-banner z-depth-1">
 
             <div id="banner-image">
                 <div class="banner-content">
                     <div class="banner-wrapper">
                         <h4 class="banner-content-slogan">More Privileges</h4>
-                        <h1 class="banner-content-title">Take <br /> your pick</h1>
-                        <p class="banner-content-message">From deposits to loans, you can pick a mix of products and
-                            services
-                            that are among
-                            the best in the market
-                        </p>
+                        <h1 class="banner-content-title">Enjoy more preferential banking perks.</h1>
+                        <p class="banner-content-message">Exclusive only to you as a DBS employee, expect nothing less
+                            with <span class="bold-italics">iPrivileges</span> <span class="disappear-on-small-screen">
+                                because you deserve only the best of our banking
+                                products and services.</span></p>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="align-center">
-            <h5 class="tag-line">iPrivilege, an exclusive preferential banking privilege for DBS employees</h5>
         </div>
 
 
@@ -140,7 +136,7 @@
                         class="tab-category">Financing</span></button></a>
         </div>
 
-        <div id="tab-med" class="tab z-depth-2 hide-on-large-only">
+        <div id="tab-med" class="tab z-depth-2 hide-on-large-only hide-on-small-only">
             <a href="#tab-med"><button class="tablinks img-tab active" onclick="openTab(event, 'save_tab')">Saving</button></a>
             <a href="#tab-med"><button class="tablinks img-tab" onclick="openTab(event, 'protect_tab')">Protecting</button></a>
             <span class="tab-break-point">
@@ -149,8 +145,8 @@
             </span>
         </div>
 
-        <!-- Tab content -->
 
+        <!-- Tab content -->
         <div id="save_tab" class="tabcontent">
             <h5 class="tab-section-title">Saving</h5>
 
@@ -161,8 +157,7 @@
                     <ul>
                         <li class="item-description">1% above board rate on SGD deposits for staff account</li>
                         <li class="item-description">No monthly service charge or fall-below fee</li>
-                        <li class="item-description">Preferential rates for 1st party FX transactions made within the
-                            designated Staff account</li>
+
                     </ul>
                 </div>
 
@@ -209,17 +204,10 @@
                 <div class="row">
 
                     <ul class="collapsible collapsible-accordion">
-                        <!-- <li>
-                            <div class="collapsible-header" tabindex="0"><i class="material-icons add">add</i>Life
-                                Insurance</div>
-                            <div class="collapsible-body">
-                                <p class="item-description"><a class="link-style" href="http://mydbs.net/Pages/ContentTemplate3.aspx?taxid=154935%20"
-                                        target="_blank"><i class="material-icons red-text">web</i>Refer to Intranet for
-                                        details</a></p>
-                            </div>
-                        </li> -->
+
                         <li>
-                            <div class="collapsible-header"><i class="material-icons add">add</i>Savings and Current
+                            <div class="collapsible-header">
+                                <i class="material-icons add">add</i>Savings and Current
                                 Account
                             </div>
                             <div class="collapsible-body" tabindex="0">
@@ -229,9 +217,9 @@
                                     with staff indicator via hardcopy form submission </a> to enjoy staff preferential
                                     rates on selected
                                     products.</p>
-                                <a class="btn red"href="http://mydbs.net/uploadedFiles/Departments/Human_Resource/Singapore/Staff_Corner/Forms(1)/Benefits_and_Pay/Pay/staff%20app%20form.pdf"
+                                <a class="btn red" href="http://mydbs.net/uploadedFiles/Departments/Human_Resource/Singapore/Staff_Corner/Forms(1)/Benefits_and_Pay/Pay/staff%20app%20form.pdf"
                                     target="_blank">
-                                   Download Form
+                                    Download Form
                                 </a>
 
                                 <p class="bold">Want to apply for a new account? </p>
@@ -239,13 +227,13 @@
                                     existing deposit account with DBS, the online application will take approximately 5
                                     working days. Your new account will be tagged automatically with staff indicator.
                                     Alternatively, you can visit any POSB / DBS branch.
-                                <div><a class="btn red" href="https://www.dbs.com.sg/personal/deposits/bank-with-ease/addon-casa?cid=sg-dbs-vanity-deposits-addon-casa"
-                                    target="_blank">
-                                    Apply now
-                                </a></div>
-                                <p>For creation of joint account with
-                                    parent, spouse or child,
-                                    you can only apply at a POSB / DBS branch.</p>
+                                    <div><a class="btn red" href="https://www.dbs.com.sg/personal/deposits/bank-with-ease/addon-casa?cid=sg-dbs-vanity-deposits-addon-casa"
+                                            target="_blank">
+                                            Apply now
+                                        </a></div>
+                                    <p>For creation of joint account with
+                                        parent, spouse or child,
+                                        you can only apply at a POSB / DBS branch.</p>
                             </div>
 
                         </li>
@@ -307,66 +295,15 @@
             </div>
         </div>
 
-        <!-- <hr /> -->
-
-        <!-- <div class="row">
-
-                <h5 class="tab-section-title">Spotlight</h5>
-                <div class="container">
-
-                    <img class="story-image item-container col s12 responsive-image" src="./images/happygirl.jpg" alt="">
-                    <div class="stories hide-on-small-only">
-                        <h5 class="story-title">I get S$100 per month by banking with DBS. <br />How do I do it?</h5>
-                        <p class="story-paragraph">With a S$4,000 salary, a S$500 of credit card spent, I enjoy a 2.2% p.a.
-                            interest on the S$70,000 in my multiplier account. With iPrivilege, I get another 1% p.a. above
-                            board rate on my savings that are over and above the S$50,000 cap.
-                        </p>
-                    </div>
-
-                    <div class="show-on-small-only hide-on-med-and-up">
-                        <h5 class="story-title">I get S$100 per month by banking with DBS. <br />How do I do it?</h5>
-                        <p class="story-paragraph">With a S$4,000 salary, a S$500 of credit card spent, I enjoy a 2.2% p.a.
-                            interest on the S$70,000 in my multiplier account. With iPrivilege, I get another 1% p.a. above
-                            board rate on my savings that are over and above the S$50,000 cap.
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-            <hr /> -->
-
-        <!-- <div class="row">
-                <h5 class="tab-section-title">Reference</h5>
-                <p class="application-text">Application details and the terms and conditions can be found on in the <a href="http://mydbs.net/uploadedFiles/Departments/Human_Resource/Singapore/Staff_Corner/Benefits_and_Pay/Staff%20Banking%20Privileges.pdf"
-                        target="_blank" class="link-style">Staff Banking Privileges Handbook</a> on Intranet.</p>
-            </div> -->
-
-
         <div id="protect_tab" class="tabcontent">
             <h5 class="tab-section-title">Protecting</h5>
 
             <div class="row">
-                <!-- <div class="item-container one col m6 s12">
+                <div class="item-container one col m6 s12">
                     <p class="item item-title"><a class="link-style" href="http://mydbs.net/Pages/ContentTemplate3.aspx?taxid=154935%20"
-                            target="_blank">Life Insurance ></a></p>
+                            target="_blank">Life and General Insurance ></a></p>
                     <ul>
-                        <li class="item-description">10% premium discount on qualifying products by Manulife</li>
-                        <li class="item-description">1% discount on reference single premium on selected Life and Whole
-                            Life
-                            Insurance
-                        </li>
-                    </ul>
-                </div> -->
-
-                <div class="item-container two col m6 s12">
-                    <p class="item item-title"><a class="link-style" href="http://mydbs.net/Pages/ContentTemplate3.aspx?taxid=154935%20"
-                            target="_blank">General Insurance ></a></p>
-                    <ul>
-                        <li class="item-description">Up to 25% corporate rate on qualifying products by Chubb
-                        </li>
-                        <li class="item-description">20% corporate rate on qualifying car insurance products by MSIG
-                            and NTUC Income
-                        </li>
+                        <li class="item-description">All year discount on selected Bancassurance products.</li>
                     </ul>
                 </div>
             </div>
@@ -381,11 +318,14 @@
                     <ul class="collapsible collapsible-accordion">
                         <!-- <li>
                             <div class="collapsible-header" tabindex="0"><i class="material-icons add">add</i>Life
-                                Insurance</div>
+                                Insurance <sup>Up to 10% OFF on selected products</sup></div>
                             <div class="collapsible-body">
-                                <p class="item-description"><a class="link-style" href="http://mydbs.net/Pages/ContentTemplate3.aspx?taxid=154935%20"
-                                        target="_blank"><i class="material-icons red-text">web</i>Refer to Intranet for
-                                        details</a></p>
+                                    <h4 class="application-title">Life Insurance</h4>
+                                    <p>Protecting yourself and your loved ones.</p>
+                                    <p class="bold"><a class="red-text link-style" href="http://mydbs.net/Consumer_Banking_Group/CIIP/Bancassurance/Life_Insurance/Manulife/Campaigns/Current.aspx"
+                                        target="_blank">Learn
+                                        more</a></p>                                
+                                <p>Apply at branches.</p>
                             </div>
                         </li> -->
                         <li>
@@ -506,8 +446,9 @@
                         <li class="item-description"> Discounted sales charge of 1.5% for all unit trust, except for
                             Nikko AM Shenton Short Term Bond Fund (sales charge at 0.2%) and MyHome Funds
                         </li>
-                        <li class="item-description">0% sales charge for lump sum investments and RSP using cash
-                            (current promotion)
+                        <li class="item-description">0% sales charge for online and offline Unit Trust subscription,
+                            both lump sum
+                            investments and RSP using cash
                         </li>
 
                     </ul>
@@ -535,15 +476,6 @@
                 <div class="row">
 
                     <ul class="collapsible collapsible-accordion">
-                        <!-- <li>
-                                <div class="collapsible-header" tabindex="0"><i class="material-icons add">add</i>Life
-                                    Insurance</div>
-                                <div class="collapsible-body">
-                                    <p class="item-description"><a class="link-style" href="http://mydbs.net/Pages/ContentTemplate3.aspx?taxid=154935%20"
-                                            target="_blank"><i class="material-icons red-text">web</i>Refer to Intranet for
-                                            details</a></p>
-                                </div>
-                            </li> -->
                         <li>
                             <div class="collapsible-header"><i class="material-icons add">add</i>Online Share Trading
                             </div>
@@ -569,24 +501,15 @@
                                 <p>Apply online now to enjoy special commmission rates. A hardcopy of your NRIC or
                                     Passport and Employment Pass, your staff
                                     pass and a letter of authorisation has to be submitted to DBS Vickers after your
-                                    online application.
+                                    online application. You can refer to the <a class="link-style" href="https://www.dbs.com.sg/iwov-resources/vickers/en/pdf/account-opening-processes-guidebook.pdf">application
+                                        guide</a>.</p>
 
-                                    <!-- <a href="https://www.dbs.com.sg/iwov-resources/vickers/en/pdf/BRE.pdf">
-                                        <img src="icons/picture_as_pdf.svg"> Business Reply Envelope</a></p>
-                                <ul>
-                                    <ol>Copy of NRIC or Passport and Employment Pass</ol>
-                                    <ol><a href="http://mydbs.net/uploadedFiles/Departments/Human_Resource/Singapore/Staff_Corner/Forms(1)/Benefits_and_Pay/Shares/shb_benefit_sl_loa.pdf"><img
-                                                src="icons/picture_as_pdf.svg">Letter
-                                            of authorisation</a></ol>
-                                    <ol>Copy of Staff Pass</ol>
-                                </ul>
-                                <br /> -->
-                                    <div class="red btn"><a href="https://internet-banking.dbs.com.sg/ibAPL/CIPVO.jsp"
-                                            target="_blank" class="white-text">Apply now</a></div>
-                                    <div class="red btn"><a href="http://mydbs.net/uploadedFiles/Departments/Human_Resource/Singapore/Staff_Corner/Forms(1)/Benefits_and_Pay/Shares/shb_benefit_sl_loa.pdf"
-                                            target="_blank" class="white-text">Download LOA</a></div>
-                                    <div class="red btn"><a href="https://www.dbs.com.sg/iwov-resources/vickers/en/pdf/BRE.pdf"
-                                            target="_blank" class="white-text">Download reply envelope</a></div>
+                                <div class="red btn"><a href="https://internet-banking.dbs.com.sg/ibAPL/CIPVO.jsp"
+                                        target="_blank" class="white-text">Apply now</a></div>
+                                <div class="red btn"><a href="http://mydbs.net/uploadedFiles/Departments/Human_Resource/Singapore/Staff_Corner/Forms(1)/Benefits_and_Pay/Shares/shb_benefit_sl_loa.pdf"
+                                        target="_blank" class="white-text">Download LOA</a></div>
+                                <div class="red btn"><a href="https://www.dbs.com.sg/iwov-resources/vickers/en/pdf/BRE.pdf"
+                                        target="_blank" class="white-text">Download reply envelope</a></div>
                             </div>
                         </li>
 
@@ -602,7 +525,6 @@
                                 <a href="https://internet-banking.dbs.com.sg/" target="_blank">
                                     <div class="btn red">Apply now</div>
                                 </a>
-
                             </div>
                         </li>
 
@@ -613,8 +535,7 @@
                                 <h4 class="application-title">Investment-Linked Products Benefits</h4>
                                 <p>Invest with DBS. Apply at any POSB/DBS branch.</p>
                                 <p class="bold"><a class="red-text link-style" href="https://www.dbs.com.sg/personal/investments/default.page"
-                                        target="_blank">Learn
-                                        more</a></p>
+                                        target="_blank">Learn more</a></p>
                             </div>
                         </li>
 
@@ -630,11 +551,10 @@
                                 <a href="https://internet-banking.dbs.com.sg/" target="_blank">
                                     <div class="btn red">Apply now</div>
                                 </a>
-
                             </div>
                         </li>
                     </ul>
-                    <br>
+
                 </div>
             </div>
         </div>
@@ -725,7 +645,6 @@
                     </ul>
                 </div>
             </div>
-
 
 
             <div class="application-section row">
@@ -856,13 +775,6 @@
                     <br>
                 </div>
             </div>
-
-            <!-- <div class="application-section row">
-                <h5 class="tab-section-title">Reference</h5>
-                <p class="application-text">Details can be found on <a href="http://mydbs.net/Staff_Corner/Reward/Benefits/Staff_Loans.aspx"
-                        target="_blank" class="link-style">Intranet page on staff loans</a> and <a href="http://mydbs.net/uploadedFiles/Departments/Human_Resource/Singapore/Staff_Corner/Benefits_and_Pay/Staff%20Banking%20Privileges.pdf"
-                        target="_blank" class="link-style">staff banking privileges</a>.</p>
-            </div> -->
         </div>
     </div>
 
@@ -886,7 +798,6 @@
             loadedDocument.classList.remove("hidden");
             loadedDocument.classList.add("active");
         }
-
     </script>
 </body>
 
